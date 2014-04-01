@@ -1,19 +1,20 @@
 <?php
-namespace VasilDakov\GDS;
-
-use VasilDakov\GDS\WarehouseService\Warehouse_PlayerPokerGamingActivity;
-use VasilDakov\GDS\WarehouseService\Warehouse_PlayerPokerGamingActivityResponse;
-
-include __DIR__ . DIRECTORY_SEPARATOR . "config.php";
-
-use SoapClient;
 /**
  * WarehouseServices
  * 
- * @author    {author}
- * @copyright {copyright}
- * @package   {package}
+ * @author    Vasil Dakov <vasildakov@gmail.com>
+ * @copyright Copyright 2014 Vasil Dakov
+ * @package   GDS
  */
+
+
+namespace VasilDakov\GDS;
+
+include __DIR__ . DIRECTORY_SEPARATOR . "config.php";
+
+use VasilDakov\GDS\WarehouseService\Warehouse_PlayerPokerGamingActivity;
+use VasilDakov\GDS\WarehouseService\Warehouse_PlayerPokerGamingActivityResponse;
+use SoapClient;
 
 
 class WarehouseService extends SoapClient {
@@ -60,6 +61,7 @@ class WarehouseService extends SoapClient {
 		'Warehouse_DailyBalanceOut' => 'Warehouse_DailyBalanceOut',
 		'Warehouse_DailyBalanceOutResponse' => 'Warehouse_DailyBalanceOutResponse',
 		);
+
 
 	/**
 	 * constructor
