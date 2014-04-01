@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="GameServices-1"
+	targetNamespace="http://www.bossmedia.com/wsdl/goaadapter" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:tns="http://www.bossmedia.com/wsdl/goaadapter" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	
+	<wsdl:documentation>
+		This Web Service defines the contract for retrieving available games.  
+	</wsdl:documentation>
+	
+	<wsdl:types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			xmlns:tns="http://www.bossmedia.com/wsdl/goaadapter"
+			attributeFormDefault="unqualified" elementFormDefault="unqualified"
+			targetNamespace="http://www.bossmedia.com/wsdl/goaadapter">
+			
+			<xs:complexType name="Game">
+				<xsd:annotation>
+					<xsd:documentation>
+					A Game is description of an available game where available means "playable". 
+					Provider, the provider of the game (G2GP, G2GR). This attribute is used as information
+					when the game is launched
+					</xsd:documentation>
+				</xsd:annotation>
+				<xs:sequence>
+					<xs:element name="identifier" type="xs:string">
+						<xsd:annotation>
+							<xsd:documentation>The unique identifier</xsd:documentation>
+						</xsd:annotation>
+					</xs:element>
+					<xs:element name="provider" type="xs:string" >
+						<xsd:annotation>
+							<xsd:documentation>
+							The Game provider (currently only G2GP, G2GR) used to identify the launch "mechanism"
+							</xsd:documentation>
+						</xsd:annotation>
+					</xs:element>
+					<xs:element name="name" type="xs:string" >
+						<xsd:annotation>
+							<xsd:documentation>
+							The localized name of the Game, where the Locale is determined at call time
+							</xsd:documentation>
+						</xsd:annotation>
+					</xs:element>
+					<xs:element name="description" type="xs:string" >
+						<xsd:annotation>
+							<xsd:documentation>
+							The localized description of the Game, where the Locale is determined at call time
+							</xsd:documentation>
+						</xsd:annotation>
+					</xs:element>
+					<xs:element name="previewImageURL" type="xs:string" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation>
+							An absolute URL to a preview image or empty if such preview image does not exists
+							</xsd:documentation>
+						</xsd:annotation>
+					</xs:element>
+					<xs:element name="deploymentURL" type="xs:string">
+						<xsd:annotation>
+							<xsd:documentation>
+							An absolute URL to the deployment URL used when launching the Game
+							</xsd:documentation>
+						</xsd:annotation>
+					</xs:element>
+					<xs:element name="launchParameter" maxOccurs="unbounded" minOccurs="0" type="xs:string" >
+						<xsd:annotation>
+							<xsd:documentation>
+							An unbounded list of key-value pairs (key=value) of extra parameters needed to successfully 
+							launch the Game.
+							</xsd:documentation>
+						</xsd:annotation>
+					</xs:element>
+					<xs:element name="category" maxOccurs="unbounded" minOccurs="0" type="xs:string">
+						<xsd:annotation>
+							<xsd:documentation>
+							An unbounded list of categories associated with this Game
+							</xsd:documentation>
+						</xsd:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>			
+			
+			<xs:element name="GetAvailableGamesRequest">			
+				<xsd:annotation>
+					<xsd:documentation>
+					A request element for getting available Games
+					</xsd:documentation>
+				</xsd:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="clientUID" type="xs:string" >
+							<xsd:annotation>
+								<xsd:documentation>
+								The client UID used to get the List of available Games
+								</xsd:documentation>
+							</xsd:annotation>
+						</xs:element>
+						<xs:element name="language" type="xs:string" >
+							<xsd:annotation>
+								<xsd:documentation>
+								The Language the retrieved Games should be described with. If a Game
+								is not defined for a particular Language it would not appear among those
+								Games returned from the call. 
+								The format of the Languages are described in the format defined by ISO-639, that
+								is a lower-case, two-letter coded format (en, sv, de, dk, no etc...)
+								</xsd:documentation>
+							</xsd:annotation>
+						</xs:element>
+						<xs:element name="currency" type="xs:string">
+							<xsd:annotation>
+								<xsd:documentation>
+								The Currency the retrieved Games should support. If a Game
+								is not defined for a particular Currency it would not appear among those
+								Games returned from the call. 
+								The format of the Currencies are described in the format defined by ISO-4217, that
+								is a upper-case, three-letter coded format (GBP, USD, EUR, etc...)
+								</xsd:documentation>
+							</xsd:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:complexType name="GetAvailableGamesResponse">
+				<xsd:annotation>
+					<xsd:documentation>
+					The response type from a call to GetAvailableGames
+					</xsd:documentation>
+				</xsd:annotation>
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="games"
+						nillable="false" type="tns:Game"/>
+				</xs:sequence>
+			</xs:complexType>
+			
+		</xs:schema>
+	</wsdl:types>
+
+	<wsdl:message name="GetAvailableGames">
+		<wsdl:part name="parameters" element="tns:GetAvailableGamesRequest">
+		</wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="GetAvailableGamesResponse">
+		<wsdl:part name="parameters" element="tns:GetAvailableGamesResponse">
+		</wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="GameServices">
+		<xsd:annotation>
+			<xsd:documentation>
+				The definition of the GameServices endpoint
+			</xsd:documentation>
+		</xsd:annotation>
+		<wsdl:operation name="GetAvailableGames">
+			<xsd:annotation>
+				<xsd:documentation>
+					The GetAvailableGames call which returns a List of available Games
+					corresponding to the provided Request
+				</xsd:documentation>
+			</xsd:annotation>
+			<wsdl:input name="GetAvailableGames" message="tns:GetAvailableGames">
+			</wsdl:input>
+			<wsdl:output name="GetAvailableGamesResponse" message="tns:GetAvailableGamesResponse">
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="GameServicesSoapBinding"
+		type="tns:GameServices">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="GetAvailableGames">
+			<soap:operation soapAction="GetAvailableGames"
+				style="document" />
+			<wsdl:input name="GetAvailableGames">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="GetAvailableGamesResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="GameServices-1">
+		<wsdl:port name="GameServicesPort" binding="tns:GameServicesSoapBinding">
+			<soap:address location="http://replace_with_real_url" />
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>
