@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1396470242">
-  <project timestamp="1396470242">
+<coverage generated="1396470466">
+  <project timestamp="1396470466">
     <package name="VasilDakov\GDS">
       <file name="/var/www/boss-poker-gds/src/GDS/WarehouseService.php">
         <class name="WarehouseService" namespace="VasilDakov\GDS">
