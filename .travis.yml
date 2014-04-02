@@ -11,4 +11,4 @@ before_script:
   - php composer.phar install
   - phpunit
 
-script: script: phpunit --configuration phpunit.xml --coverage-text
+script: phpunit --configuration phpunit.xml --coverage-text
