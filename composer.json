@@ -3,7 +3,7 @@
 	"type": "library",
 	"description": "Boss Media Poker GDS 7.3.1 Client",
 	"keywords": ["bossmedia", "poker", "gaming", "gds", "api", "gtech"],
-	"homepage": "",
+	"homepage": "https://github.com/vasildakov/boss-poker-gds",
 	"license": "GPL-3.0",
 	"authors": [
      	{
