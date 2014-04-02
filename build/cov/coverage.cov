@@ -1,0 +1,373 @@
+<?php
+$coverage = new PHP_CodeCoverage;
+$coverage->setData(array (
+  '/var/www/boss-poker-gds/src/GDS/WarehouseService.php' => 
+  array (
+    13 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    71 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    73 => 
+    array (
+    ),
+    74 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
+    76 => 
+    array (
+    ),
+    77 => 
+    array (
+    ),
+    78 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    88 => 
+    array (
+    ),
+    89 => 
+    array (
+    ),
+    91 => 
+    array (
+    ),
+    92 => 
+    array (
+    ),
+    93 => NULL,
+    103 => 
+    array (
+    ),
+    104 => 
+    array (
+    ),
+    106 => 
+    array (
+    ),
+    107 => 
+    array (
+    ),
+    108 => NULL,
+    117 => 
+    array (
+    ),
+    118 => 
+    array (
+    ),
+    120 => 
+    array (
+    ),
+    121 => 
+    array (
+    ),
+    122 => NULL,
+    131 => 
+    array (
+    ),
+    132 => 
+    array (
+    ),
+    134 => 
+    array (
+    ),
+    135 => 
+    array (
+    ),
+    136 => NULL,
+    145 => 
+    array (
+    ),
+    146 => 
+    array (
+    ),
+    148 => 
+    array (
+    ),
+    149 => 
+    array (
+    ),
+    150 => NULL,
+    159 => 
+    array (
+    ),
+    160 => 
+    array (
+    ),
+    162 => 
+    array (
+    ),
+    163 => 
+    array (
+    ),
+    164 => NULL,
+    173 => 
+    array (
+    ),
+    174 => 
+    array (
+    ),
+    176 => 
+    array (
+    ),
+    177 => 
+    array (
+    ),
+    178 => NULL,
+    187 => 
+    array (
+    ),
+    188 => 
+    array (
+    ),
+    190 => 
+    array (
+    ),
+    191 => 
+    array (
+    ),
+    192 => NULL,
+    201 => 
+    array (
+    ),
+    202 => 
+    array (
+    ),
+    204 => 
+    array (
+    ),
+    205 => 
+    array (
+    ),
+    206 => NULL,
+    215 => 
+    array (
+    ),
+    216 => 
+    array (
+    ),
+    218 => 
+    array (
+    ),
+    219 => 
+    array (
+    ),
+    220 => NULL,
+    229 => 
+    array (
+    ),
+    230 => 
+    array (
+    ),
+    232 => 
+    array (
+    ),
+    233 => 
+    array (
+    ),
+    234 => NULL,
+    243 => 
+    array (
+    ),
+    244 => 
+    array (
+    ),
+    246 => 
+    array (
+    ),
+    247 => 
+    array (
+    ),
+    248 => NULL,
+    257 => 
+    array (
+    ),
+    258 => 
+    array (
+    ),
+    260 => 
+    array (
+    ),
+    261 => 
+    array (
+    ),
+    262 => NULL,
+    271 => 
+    array (
+    ),
+    272 => 
+    array (
+    ),
+    274 => 
+    array (
+    ),
+    275 => 
+    array (
+    ),
+    276 => NULL,
+    285 => 
+    array (
+    ),
+    286 => 
+    array (
+    ),
+    288 => 
+    array (
+    ),
+    289 => 
+    array (
+    ),
+    290 => NULL,
+    299 => 
+    array (
+    ),
+    300 => 
+    array (
+    ),
+    302 => 
+    array (
+    ),
+    303 => 
+    array (
+    ),
+    304 => NULL,
+    313 => 
+    array (
+    ),
+    314 => 
+    array (
+    ),
+    316 => 
+    array (
+    ),
+    317 => 
+    array (
+    ),
+    318 => NULL,
+    326 => 
+    array (
+    ),
+    327 => 
+    array (
+    ),
+    329 => 
+    array (
+    ),
+    330 => 
+    array (
+    ),
+    331 => NULL,
+    340 => 
+    array (
+    ),
+    341 => 
+    array (
+    ),
+    343 => 
+    array (
+    ),
+    344 => 
+    array (
+    ),
+    345 => NULL,
+    354 => 
+    array (
+    ),
+    355 => 
+    array (
+    ),
+    357 => 
+    array (
+    ),
+    358 => 
+    array (
+    ),
+    359 => NULL,
+  ),
+  '/var/www/boss-poker-gds/src/GDS/config.php' => 
+  array (
+    3 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    5 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    6 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    8 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    9 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    10 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    11 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    12 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    13 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+    14 => 
+    array (
+      0 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+    ),
+  ),
+));
+$coverage->setTests(array (
+  'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed' => 0,
+));
+
+$filter = $coverage->filter();
+$filter->setBlacklistedFiles(array (
+  '/var/www/boss-poker-gds/tests/WarehouseServiceTest.php' => true,
+  0 => true,
+  '/usr/local/bin/phpunit' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Dumper.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Escaper.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Exception/DumpException.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Exception/ExceptionInterface.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Exception/ParseException.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Exception/RuntimeException.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Inline.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Parser.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/DumperTest.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/InlineTest.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/ParseExceptionTest.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/ParserTest.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/YamlTest.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Unescaper.php' => true,
+  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Yaml.php' => true,
+  '/var/www/boss-poker-gds/vendor/composer/ClassLoader.php' => true,
+  '/var/www/boss-poker-gds/vendor/composer/autoload_classmap.php' => true,
+  '/var/www/boss-poker-gds/vendor/composer/autoload_namespaces.php' => true,
+  '/var/www/boss-poker-gds/vendor/composer/autoload_psr4.php' => true,
+  '/var/www/boss-poker-gds/vendor/composer/autoload_real.php' => true,
+));
+$filter->setWhitelistedFiles(array (
+));
+
+return $coverage;
