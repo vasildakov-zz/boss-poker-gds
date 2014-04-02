@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" 
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:s="http://www.w3.org/2001/XMLSchema"
+  xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:tns="bosscasinos/GDS/WarehouseServices/"
+  xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/"
+  xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+  targetNamespace="bosscasinos/GDS/WarehouseServices/"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="bosscasinos/GDS/WarehouseServices/">
+      <s:element name="Warehouse_PlayerCasinoGamingActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productGroupId" type="tns:ArrayOfInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Warehouse_PlayerCasinoGamingActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_PlayerCasinoGamingActivityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_playerPokerGamingActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productGroupId" type="tns:ArrayOfInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_playerPokerGamingActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_playerPokerGamingActivityResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_PlayerRealMoneyTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productGroupId" type="tns:ArrayOfInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_PlayerRealMoneyTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_PlayerRealMoneyTransactionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_PlayerBonusMoneyTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productGroupId" type="tns:ArrayOfInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_PlayerBonusMoneyTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_PlayerBonusMoneyTransactionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_PlayerJackpotTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_PlayerJackpotTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_PlayerJackpotTransactionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DimensionPlayer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productGroupId" type="tns:ArrayOfInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="startdate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="includeChanged" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DimensionPlayerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_DimensionPlayerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DimensionGame">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DimensionGameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_DimensionGameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DimensionProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productGroupId" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DimensionProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_DimensionProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DimensionJackpot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DimensionJackpotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_DimensionJackpotResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_GroupGameSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="productGroupId" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_GroupGameSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_GroupGameSessionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DailyBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="systemId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Warehouse_DailyBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Warehouse_DailyBalanceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Warehouse_PlayerCasinoGamingActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_PlayerCasinoGamingActivity" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_PlayerCasinoGamingActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_PlayerCasinoGamingActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_playerPokerGamingActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_playerPokerGamingActivity" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_playerPokerGamingActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_playerPokerGamingActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_PlayerRealMoneyTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_PlayerRealMoneyTransaction" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_PlayerRealMoneyTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_PlayerRealMoneyTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_PlayerBonusMoneyTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_PlayerBonusMoneyTransaction" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_PlayerBonusMoneyTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_PlayerBonusMoneyTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_PlayerJackpotTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_PlayerJackpotTransaction" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_PlayerJackpotTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_PlayerJackpotTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DimensionPlayerSoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_DimensionPlayer" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DimensionPlayerSoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_DimensionPlayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DimensionGameSoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_DimensionGame" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DimensionGameSoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_DimensionGameResponse"/>
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DimensionProductSoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_DimensionProduct" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DimensionProductSoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_DimensionProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DimensionJackpotSoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_DimensionJackpot" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DimensionJackpotSoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_DimensionJackpotResponse" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_GroupGameSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_GroupGameSession" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_GroupGameSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_GroupGameSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DailyBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:Warehouse_DailyBalance" />
+  </wsdl:message>
+  <wsdl:message name="Warehouse_DailyBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:Warehouse_DailyBalanceResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="WarehouseServicesSoap">
+    <wsdl:operation name="Warehouse_PlayerCasinoGamingActivity">
+      <wsdl:input message="tns:Warehouse_PlayerCasinoGamingActivitySoapIn" />
+      <wsdl:output message="tns:Warehouse_PlayerCasinoGamingActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_playerPokerGamingActivity">
+      <wsdl:input message="tns:Warehouse_playerPokerGamingActivitySoapIn" />
+      <wsdl:output message="tns:Warehouse_playerPokerGamingActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_PlayerRealMoneyTransaction">
+      <wsdl:input message="tns:Warehouse_PlayerRealMoneyTransactionSoapIn" />
+      <wsdl:output message="tns:Warehouse_PlayerRealMoneyTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_PlayerBonusMoneyTransaction">
+      <wsdl:input message="tns:Warehouse_PlayerBonusMoneyTransactionSoapIn" />
+      <wsdl:output message="tns:Warehouse_PlayerBonusMoneyTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_PlayerJackpotTransaction">
+      <wsdl:input message="tns:Warehouse_PlayerJackpotTransactionSoapIn" />
+      <wsdl:output message="tns:Warehouse_PlayerJackpotTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DimensionPlayer">
+      <wsdl:input message="tns:Warehouse_DimensionPlayerSoapIn" />
+      <wsdl:output message="tns:Warehouse_DimensionPlayerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DimensionGame">
+      <wsdl:input message="tns:Warehouse_DimensionGameSoapIn" />
+      <wsdl:output message="tns:Warehouse_DimensionGameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DimensionProduct">
+      <wsdl:input message="tns:Warehouse_DimensionProductSoapIn" />
+      <wsdl:output message="tns:Warehouse_DimensionProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DimensionJackpot">
+      <wsdl:input message="tns:Warehouse_DimensionJackpotSoapIn" />
+      <wsdl:output message="tns:Warehouse_DimensionJackpotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_GroupGameSession">
+      <wsdl:input message="tns:Warehouse_GroupGameSessionSoapIn" />
+      <wsdl:output message="tns:Warehouse_GroupGameSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DailyBalance">
+      <wsdl:input message="tns:Warehouse_DailyBalanceSoapIn" />
+      <wsdl:output message="tns:Warehouse_DailyBalanceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WarehouseServicesSoap" type="tns:WarehouseServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="Warehouse_PlayerCasinoGamingActivity">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_PlayerCasinoGamingActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_playerPokerGamingActivity">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_playerPokerGamingActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_PlayerRealMoneyTransaction">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_PlayerRealMoneyTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_PlayerBonusMoneyTransaction">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_PlayerBonusMoneyTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_PlayerJackpotTransaction">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_PlayerJackpotTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DimensionPlayer">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_DimensionPlayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DimensionGame">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_DimensionGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DimensionProduct">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_DimensionProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DimensionJackpot">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_DimensionJackpot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_GroupGameSession">
+      <soap:operation soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_GroupGameSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Warehouse_DailyBalance">
+      <soap:operation
+        soapAction="bosscasinos/GDS/WarehouseServices/Warehouse_DailyBalance" style="document" />
+        <wsdl:input>
+          <soap:body use="literal" />
+        </wsdl:input>
+        <wsdl:output>
+          <soap:body use="literal" />
+        </wsdl:output>
+      </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="WarehouseServices">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+      <wsdl:port name="WarehouseServicesSoap" binding="tns:WarehouseServicesSoap">
+        <soap:address location="http://localhost/boss/6.3.0/GDS/Warehouseservices.asmx" />
+      </wsdl:port>
+    </wsdl:service>
+  </wsdl:definitions>
+
+

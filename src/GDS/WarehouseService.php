@@ -1,6 +1,6 @@
 <?php
 /**
- * WarehouseServices
+ * WarehouseServices Client
  * 
  * @author    Vasil Dakov <vasildakov@gmail.com>
  * @copyright Copyright 2014 Vasil Dakov
@@ -12,12 +12,12 @@ namespace VasilDakov\GDS;
 
 include __DIR__ . DIRECTORY_SEPARATOR . "config.php";
 
-use VasilDakov\GDS\WarehouseService\Warehouse_PlayerPokerGamingActivity;
+use VasilDakov\GDS\WarehouseService\Warehouse_PlayerPokerGamingActivityRequest;
 use VasilDakov\GDS\WarehouseService\Warehouse_PlayerPokerGamingActivityResponse;
 use SoapClient;
 
 
-class WarehouseService extends SoapClient {
+class WarehouseService extends \SoapClient {
 
 	private static $classmap = array(
 		'Warehouse_PlayerPokerGamingActivity' => 'Warehouse_playerPokerGamingActivity',
@@ -83,7 +83,7 @@ class WarehouseService extends SoapClient {
      * @param Warehouse_playerPokerGamingActivity $parameters
      * @return Warehouse_playerPokerGamingActivityResponse
      */
-  	public function Warehouse_PlayerPokerGamingActivity(Warehouse_PlayerPokerGamingActivity $parameters) 
+  	public function Warehouse_PlayerPokerGamingActivity(Warehouse_PlayerPokerGamingActivityRequest $parameters) 
   	{
   		return $this->__soapCall('Warehouse_PlayerPokerGamingActivity', array($parameters), array(
   			'uri' => 'bosscasinos/GDS/WarehouseServices/',
