@@ -1,6 +1,9 @@
 Poker GDS 7.3.1 Client
 =======================
 
+[![Build Status](https://travis-ci.org/vasildakov/boss-poker-gds.svg?branch=master)](https://travis-ci.org/vasildakov/boss-poker-gds)
+
+
 Introduction
 ------------
 This document describes how to use the web services provided by the Poker GDS (Gaming
