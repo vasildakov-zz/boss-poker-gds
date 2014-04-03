@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1396514708">
-  <project timestamp="1396514708">
+<coverage generated="1396520717">
+  <project timestamp="1396520717">
     <package name="VasilDakov\GDS">
       <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter.php">
         <class name="GenericPortalAdapter" namespace="VasilDakov\GDS">
