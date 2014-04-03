@@ -10,22 +10,23 @@
 
 namespace VasilDakov\GDS;
 
-class GenericPortalAdapter  extends \SoapClient { 
+use VasilDakov\GDS\GenericPortalAdapter\RegisterRequest;
+use VasilDakov\GDS\GenericPortalAdapter\LoginRequest;
+
+class GenericPortalAdapter extends \SoapClient { 
 
 	private static $classmap = array(
-		'Register' => 'Register',
+    		'Register' => 'Register',
+            'Login'    => 'Login',
+            'Logout'   => 'Logout'
 	);
 
-
-    public function Register($parameters) 
-    {
-    	if( empty($parameters) ) throw new \InvalidArgumentException;
-    }
 
 
 	public function __construct($wsdl, $options = array()) 
 	{
-		foreach(self::$classmap as $key => $value) {
+		foreach(self::$classmap as $key => $value) 
+        {
 			if(!isset($options['classmap'][$key])) {
 				$options['classmap'][$key] = $value;
 			}
@@ -33,31 +34,41 @@ class GenericPortalAdapter  extends \SoapClient {
 		parent::__construct($wsdl, $options);
 	}	
 
-    public function Login($parameters) {}
 
-    public function LoginWithToken($parameters) {}
+    public function Register(RegisterRequest $request) 
+    {
+        return true;
+    }
 
-    public function Logout($parameters) {}
 
-    public function GetAccountBalance($parameters) {}
+    public function Login(LoginRequest $request) 
+    {
+        return true;
+    }
 
-    public function GetNickName($parameters) {}
+    public function LoginWithToken($request) {}
 
-    public function GetAllNickNames($parameters) {}
+    public function Logout($request) {}
 
-    public function SetNickName($parameters) {}
+    public function GetAccountBalance($request) {}
 
-    public function IsUsernameAvailable($parameters) {}
+    public function GetNickName($request) {}
 
-    public function RedeemLoyaltyPoints($parameters) {}
+    public function GetAllNickNames($request) {}
 
-    public function DeductLoyaltyPoints($parameters) {}
+    public function SetNickName($request) {}
 
-    public function UpdatePassword($parameters) {}
+    public function IsUsernameAvailable($request) {}
 
-    public function RenewPassword($parameters) {}
+    public function RedeemLoyaltyPoints($request) {}
 
-    public function ReferAFriend($parameters) {}
+    public function DeductLoyaltyPoints($request) {}
+
+    public function UpdatePassword($request) {}
+
+    public function RenewPassword($request) {}
+
+    public function ReferAFriend($request) {}
 
     public function ActivateAccount($parameters) {}
 

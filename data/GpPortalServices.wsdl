@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="GpPortalServicesService" targetNamespace="http://www.bossmedia.com/gp/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.bossmedia.com/gp/wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.bossmedia.com/gp/wsdl" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.bossmedia.com/gp/wsdl">
+<xs:element name="getAvailableGames" type="tns:getAvailableGames"/>
+<xs:element name="getAvailableGamesResponse" type="tns:getAvailableGamesResponse"/>
+<xs:element name="getAvailableMiniGames" type="tns:getAvailableMiniGames"/>
+<xs:element name="getAvailableMiniGamesResponse" type="tns:getAvailableMiniGamesResponse"/>
+<xs:element name="getJackpotValue" type="tns:getJackpotValue"/>
+<xs:element name="getJackpotValueResponse" type="tns:getJackpotValueResponse"/>
+<xs:element name="getMultiplePlayerHistoryEventDetails" type="tns:getMultiplePlayerHistoryEventDetails"/>
+<xs:element name="getMultiplePlayerHistoryEventDetailsResponse" type="tns:getMultiplePlayerHistoryEventDetailsResponse"/>
+<xs:element name="getPlayerHistoryEventDetails" type="tns:getPlayerHistoryEventDetails"/>
+<xs:element name="getPlayerHistoryEventDetailsResponse" type="tns:getPlayerHistoryEventDetailsResponse"/>
+<xs:element name="getPlayerHistoryEvents" type="tns:getPlayerHistoryEvents"/>
+<xs:element name="getPlayerHistoryEventsResponse" type="tns:getPlayerHistoryEventsResponse"/>
+<xs:element name="getTickerMessages" type="tns:getTickerMessages"/>
+<xs:element name="getTickerMessagesResponse" type="tns:getTickerMessagesResponse"/>
+<xs:element name="getUnfinishedGames" type="tns:getUnfinishedGames"/>
+<xs:element name="getUnfinishedGamesResponse" type="tns:getUnfinishedGamesResponse"/>
+<xs:complexType name="getUnfinishedGames">
+<xs:sequence>
+<xs:element minOccurs="0" name="session" type="tns:session"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="session">
+<xs:sequence>
+<xs:element name="sessionId" type="tns:playerSessionUId"/>
+<xs:element name="clientId" type="tns:clientId"/>
+<xs:element name="username" type="xs:string"/>
+<xs:element name="clientIp" type="xs:string"/>
+<xs:element name="locale" type="xs:string"/>
+<xs:element name="timezone" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="playerSessionUId">
+<xs:sequence>
+<xs:element name="id" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="clientId">
+<xs:sequence>
+<xs:element name="id" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getUnfinishedGamesResponse">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="unfinishedGames" type="tns:unfinishedGameInfo"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="unfinishedGameInfo">
+<xs:sequence>
+<xs:element name="info" type="tns:gameInfo"/>
+<xs:element name="gameSessionId" type="tns:playerGameSessionUId"/>
+<xs:element name="pendingBetAmount" type="xs:string"/>
+<xs:element name="date" type="xs:dateTime"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="gameInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="deploymentUrl" type="xs:string"/>
+<xs:element minOccurs="0" name="gameVariantId" type="tns:gameVariantId"/>
+<xs:element minOccurs="0" name="gameVariantName" type="xs:string"/>
+<xs:element minOccurs="0" name="gameVariantDescription" type="xs:string"/>
+<xs:element minOccurs="0" name="previewImageUrl" type="xs:string"/>
+<xs:element minOccurs="0" name="gcName" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="betLimits" nillable="true" type="tns:betLimitInfo"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="jackpot" nillable="true" type="tns:jackpotId"/>
+<xs:element minOccurs="0" name="gameId" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="gameVariantId">
+<xs:sequence>
+<xs:element name="id" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="betLimitInfo">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element minOccurs="0" name="min" type="xs:string"/>
+<xs:element minOccurs="0" name="max" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="jackpotId">
+<xs:sequence>
+<xs:element name="id" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="playerGameSessionUId">
+<xs:sequence>
+<xs:element name="id" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getPlayerHistoryEventDetails">
+<xs:sequence>
+<xs:element minOccurs="0" name="session" type="tns:session"/>
+<xs:element minOccurs="0" name="eventId" type="tns:phEventId"/>
+<xs:element minOccurs="0" name="eventType" type="tns:phEventType"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="phEventId">
+<xs:sequence>
+<xs:element name="id" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getPlayerHistoryEventDetailsResponse">
+<xs:sequence>
+<xs:element minOccurs="0" name="details" type="tns:phEventDetails"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="phEventDetails">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="parts" type="tns:phEventDetailsPart"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="headers" type="tns:columnHeader"/>
+<xs:element minOccurs="0" name="deploymentUrl" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="phEventDetailsPart">
+<xs:sequence>
+<xs:element name="partId" type="xs:int"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="values" type="tns:columnValue"/>
+<xs:element name="playable" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="columnValue">
+<xs:sequence>
+<xs:element name="key" type="xs:string"/>
+<xs:element name="value" type="xs:string"/>
+<xs:element name="ordinal" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="columnHeader">
+<xs:sequence>
+<xs:element name="key" type="xs:string"/>
+<xs:element name="name" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getMultiplePlayerHistoryEventDetails">
+<xs:sequence>
+<xs:element minOccurs="0" name="session" type="tns:session"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="eventIds" type="tns:phEventId"/>
+<xs:element minOccurs="0" name="eventType" type="tns:phEventType"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getMultiplePlayerHistoryEventDetailsResponse">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="multipleDetails" type="tns:PhEventDetailsPair"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="PhEventDetailsPair">
+<xs:sequence>
+<xs:element minOccurs="0" name="eventId" type="tns:phEventId"/>
+<xs:element minOccurs="0" name="details" type="tns:phEventDetails"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAvailableGames">
+<xs:sequence>
+<xs:element minOccurs="0" name="clientId" type="tns:clientId"/>
+<xs:element minOccurs="0" name="locale" type="xs:string"/>
+<xs:element minOccurs="0" name="currency" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAvailableGamesResponse">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="availableGames" type="tns:gameInfo"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAvailableMiniGames">
+<xs:sequence>
+<xs:element minOccurs="0" name="clientId" type="tns:clientId"/>
+<xs:element minOccurs="0" name="locale" type="xs:string"/>
+<xs:element minOccurs="0" name="currency" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAvailableMiniGamesResponse">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="availableMiniGames" type="tns:gameInfo"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getTickerMessages">
+<xs:sequence>
+<xs:element minOccurs="0" name="clientId" type="tns:clientId"/>
+<xs:element minOccurs="0" name="feedId" type="tns:feedId"/>
+<xs:element minOccurs="0" name="locale" type="xs:string"/>
+<xs:element minOccurs="0" name="currency" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="feedId">
+<xs:sequence>
+<xs:element name="id" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getTickerMessagesResponse">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="messages" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getPlayerHistoryEvents">
+<xs:sequence>
+<xs:element minOccurs="0" name="session" type="tns:session"/>
+<xs:element minOccurs="0" name="from" type="xs:dateTime"/>
+<xs:element minOccurs="0" name="to" type="xs:dateTime"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getPlayerHistoryEventsResponse">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="events" type="tns:playerHistoryEvent"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="playerHistoryEvent">
+<xs:sequence>
+<xs:element name="eventId" type="tns:phEventId"/>
+<xs:element name="eventName" type="xs:string"/>
+<xs:element name="startTime" type="xs:dateTime"/>
+<xs:element name="type" type="tns:phEventType"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getJackpotValue">
+<xs:sequence>
+<xs:element minOccurs="0" name="jackpotId" type="tns:jackpotId"/>
+<xs:element minOccurs="0" name="currency" type="xs:string"/>
+<xs:element minOccurs="0" name="locale" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getJackpotValueResponse">
+<xs:sequence>
+<xs:element minOccurs="0" name="value" type="tns:jackpotValueInfo"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="jackpotValueInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="jackpotName" type="xs:string"/>
+<xs:element minOccurs="0" name="value" type="xs:decimal"/>
+<xs:element minOccurs="0" name="currency" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:simpleType name="phEventType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="MP_GAME"/>
+<xs:enumeration value="SP_GAME"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="InvalidSessionFault" type="tns:InvalidSessionFault"/>
+<xs:complexType name="InvalidSessionFault">
+<xs:sequence/>
+</xs:complexType>
+<xs:element name="IllegalArgumentFault" type="tns:IllegalArgumentFault"/>
+<xs:complexType name="IllegalArgumentFault">
+<xs:sequence/>
+</xs:complexType>
+<xs:element name="InternalErrorFault" type="tns:InternalErrorFault"/>
+<xs:complexType name="InternalErrorFault">
+<xs:sequence/>
+</xs:complexType>
+<xs:element name="JackpotNotFoundFault" type="tns:JackpotNotFoundFault"/>
+<xs:complexType name="JackpotNotFoundFault">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getAvailableMiniGamesResponse">
+    <wsdl:part name="parameters" element="tns:getAvailableMiniGamesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvalidSessionFault">
+    <wsdl:part name="InvalidSessionFault" element="tns:InvalidSessionFault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="JackpotNotFoundFault">
+    <wsdl:part name="JackpotNotFoundFault" element="tns:JackpotNotFoundFault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAvailableGames">
+    <wsdl:part name="parameters" element="tns:getAvailableGames">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAvailableGamesResponse">
+    <wsdl:part name="parameters" element="tns:getAvailableGamesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUnfinishedGamesResponse">
+    <wsdl:part name="parameters" element="tns:getUnfinishedGamesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPlayerHistoryEventDetailsResponse">
+    <wsdl:part name="parameters" element="tns:getPlayerHistoryEventDetailsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="IllegalArgumentFault">
+    <wsdl:part name="IllegalArgumentFault" element="tns:IllegalArgumentFault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InternalErrorFault">
+    <wsdl:part name="InternalErrorFault" element="tns:InternalErrorFault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMultiplePlayerHistoryEventDetails">
+    <wsdl:part name="parameters" element="tns:getMultiplePlayerHistoryEventDetails">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTickerMessages">
+    <wsdl:part name="parameters" element="tns:getTickerMessages">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTickerMessagesResponse">
+    <wsdl:part name="parameters" element="tns:getTickerMessagesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUnfinishedGames">
+    <wsdl:part name="parameters" element="tns:getUnfinishedGames">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPlayerHistoryEventDetails">
+    <wsdl:part name="parameters" element="tns:getPlayerHistoryEventDetails">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getJackpotValueResponse">
+    <wsdl:part name="parameters" element="tns:getJackpotValueResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPlayerHistoryEventsResponse">
+    <wsdl:part name="parameters" element="tns:getPlayerHistoryEventsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAvailableMiniGames">
+    <wsdl:part name="parameters" element="tns:getAvailableMiniGames">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPlayerHistoryEvents">
+    <wsdl:part name="parameters" element="tns:getPlayerHistoryEvents">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMultiplePlayerHistoryEventDetailsResponse">
+    <wsdl:part name="parameters" element="tns:getMultiplePlayerHistoryEventDetailsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getJackpotValue">
+    <wsdl:part name="parameters" element="tns:getJackpotValue">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GpPortalServices">
+    <wsdl:operation name="getUnfinishedGames">
+      <wsdl:input name="getUnfinishedGames" message="tns:getUnfinishedGames">
+    </wsdl:input>
+      <wsdl:output name="getUnfinishedGamesResponse" message="tns:getUnfinishedGamesResponse">
+    </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault" message="tns:IllegalArgumentFault">
+    </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault" message="tns:InternalErrorFault">
+    </wsdl:fault>
+      <wsdl:fault name="InvalidSessionFault" message="tns:InvalidSessionFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPlayerHistoryEventDetails">
+      <wsdl:input name="getPlayerHistoryEventDetails" message="tns:getPlayerHistoryEventDetails">
+    </wsdl:input>
+      <wsdl:output name="getPlayerHistoryEventDetailsResponse" message="tns:getPlayerHistoryEventDetailsResponse">
+    </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault" message="tns:IllegalArgumentFault">
+    </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault" message="tns:InternalErrorFault">
+    </wsdl:fault>
+      <wsdl:fault name="InvalidSessionFault" message="tns:InvalidSessionFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getMultiplePlayerHistoryEventDetails">
+      <wsdl:input name="getMultiplePlayerHistoryEventDetails" message="tns:getMultiplePlayerHistoryEventDetails">
+    </wsdl:input>
+      <wsdl:output name="getMultiplePlayerHistoryEventDetailsResponse" message="tns:getMultiplePlayerHistoryEventDetailsResponse">
+    </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault" message="tns:IllegalArgumentFault">
+    </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault" message="tns:InternalErrorFault">
+    </wsdl:fault>
+      <wsdl:fault name="InvalidSessionFault" message="tns:InvalidSessionFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableGames">
+      <wsdl:input name="getAvailableGames" message="tns:getAvailableGames">
+    </wsdl:input>
+      <wsdl:output name="getAvailableGamesResponse" message="tns:getAvailableGamesResponse">
+    </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault" message="tns:IllegalArgumentFault">
+    </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault" message="tns:InternalErrorFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableMiniGames">
+      <wsdl:input name="getAvailableMiniGames" message="tns:getAvailableMiniGames">
+    </wsdl:input>
+      <wsdl:output name="getAvailableMiniGamesResponse" message="tns:getAvailableMiniGamesResponse">
+    </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault" message="tns:IllegalArgumentFault">
+    </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault" message="tns:InternalErrorFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTickerMessages">
+      <wsdl:input name="getTickerMessages" message="tns:getTickerMessages">
+    </wsdl:input>
+      <wsdl:output name="getTickerMessagesResponse" message="tns:getTickerMessagesResponse">
+    </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault" message="tns:IllegalArgumentFault">
+    </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault" message="tns:InternalErrorFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPlayerHistoryEvents">
+      <wsdl:input name="getPlayerHistoryEvents" message="tns:getPlayerHistoryEvents">
+    </wsdl:input>
+      <wsdl:output name="getPlayerHistoryEventsResponse" message="tns:getPlayerHistoryEventsResponse">
+    </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault" message="tns:IllegalArgumentFault">
+    </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault" message="tns:InternalErrorFault">
+    </wsdl:fault>
+      <wsdl:fault name="InvalidSessionFault" message="tns:InvalidSessionFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getJackpotValue">
+      <wsdl:input name="getJackpotValue" message="tns:getJackpotValue">
+    </wsdl:input>
+      <wsdl:output name="getJackpotValueResponse" message="tns:getJackpotValueResponse">
+    </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault" message="tns:IllegalArgumentFault">
+    </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault" message="tns:InternalErrorFault">
+    </wsdl:fault>
+      <wsdl:fault name="JackpotNotFoundFault" message="tns:JackpotNotFoundFault">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GpPortalServicesServiceSoapBinding" type="tns:GpPortalServices">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getUnfinishedGames">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUnfinishedGames">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUnfinishedGamesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault">
+        <soap:fault name="IllegalArgumentFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault">
+        <soap:fault name="InternalErrorFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidSessionFault">
+        <soap:fault name="InvalidSessionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getMultiplePlayerHistoryEventDetails">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getMultiplePlayerHistoryEventDetails">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getMultiplePlayerHistoryEventDetailsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault">
+        <soap:fault name="IllegalArgumentFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault">
+        <soap:fault name="InternalErrorFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidSessionFault">
+        <soap:fault name="InvalidSessionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPlayerHistoryEventDetails">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getPlayerHistoryEventDetails">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPlayerHistoryEventDetailsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault">
+        <soap:fault name="IllegalArgumentFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault">
+        <soap:fault name="InternalErrorFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidSessionFault">
+        <soap:fault name="InvalidSessionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableGames">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAvailableGames">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAvailableGamesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault">
+        <soap:fault name="IllegalArgumentFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault">
+        <soap:fault name="InternalErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableMiniGames">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAvailableMiniGames">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAvailableMiniGamesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault">
+        <soap:fault name="IllegalArgumentFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault">
+        <soap:fault name="InternalErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTickerMessages">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getTickerMessages">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTickerMessagesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault">
+        <soap:fault name="IllegalArgumentFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault">
+        <soap:fault name="InternalErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPlayerHistoryEvents">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getPlayerHistoryEvents">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPlayerHistoryEventsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault">
+        <soap:fault name="IllegalArgumentFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault">
+        <soap:fault name="InternalErrorFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidSessionFault">
+        <soap:fault name="InvalidSessionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getJackpotValue">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getJackpotValue">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getJackpotValueResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="IllegalArgumentFault">
+        <soap:fault name="IllegalArgumentFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="InternalErrorFault">
+        <soap:fault name="InternalErrorFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="JackpotNotFoundFault">
+        <soap:fault name="JackpotNotFoundFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GpPortalServicesService">
+    <wsdl:port name="GpPortalServicesPort" binding="tns:GpPortalServicesServiceSoapBinding">
+      <soap:address location="http://localhost:9090/GpPortalServicesPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

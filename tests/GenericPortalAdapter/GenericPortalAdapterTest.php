@@ -1,59 +1,84 @@
 <?php 
 
 use VasilDakov\GDS\GenericPortalAdapter;
+use VasilDakov\GDS\GenericPortalAdapter\RegisterRequest;
+use VasilDakov\GDS\GenericPortalAdapter\LoginRequest;
 
-class GenericPortalAdapterTest extends PHPUnit_Framework_TestCase {
+class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
 
 
 	public function setUp() 
 	{
-		$this->wsdl = './data/GenericPortalAdapter.wsdl';
-		$this->client = new GenericPortalAdapter($this->wsdl, $options = array());
+		#$this->wsdl = './data/GenericPortalAdapter.wsdl';
+		#$this->client = new GenericPortalAdapter($this->wsdl, $options = array());
+
+        $wsdl = './data/GenericPortalAdapter.wsdl';
+        $this->client = $this->getMockFromWsdl($wsdl, 'GenericPortalAdapter');
+
 	}
+
 
     public function testConstruct()
     {
-        $this->assertInstanceOf('\VasilDakov\GDS\GenericPortalAdapter', $this->client);
+        $client = new GenericPortalAdapter('./data/GenericPortalAdapter.wsdl', $options = array());
+        $this->assertInstanceOf('\VasilDakov\GDS\GenericPortalAdapter', $client);
     }
 
 
     public function testInheritance()
     {
-        $functions = $this->client->__getFunctions();
+        $client = new GenericPortalAdapter('./data/GenericPortalAdapter.wsdl', $options = array());
+        $functions = $client->__getFunctions();
         $this->assertInternalType('array', $functions);
         $this->assertCount(48, $functions);
     }
 
 
 
-    public function testRegister() 
+    public function testRegisterRequestInstance() 
     {
-        $parameters = array('bar' => 'foo');
-        $response = $this->client->Register($parameters);
-    }
+        $client = new GenericPortalAdapter('./data/GenericPortalAdapter.wsdl', $options = array());
 
+        $request = new RegisterRequest;
+        $this->assertInstanceOf('\VasilDakov\GDS\GenericPortalAdapter\RegisterRequest', $request);
 
-    /**
-     * @expectedException InvalidArgumentException
-     */
-    public function testRegisterThrowsException() 
-    {
-        $parameters = array();
-        $this->client->Register($parameters);
+        $response = $client->Register($request);
+        $this->assertTrue($response);
     }
 
 
 
-    public function testRegisterThrowsException2() 
+    public function testLoginSuccess() 
     {
-        $parameters = array();
-        $this->setExpectedException('InvalidArgumentException');
-        $this->client->Register($parameters);
+        $request = new LoginRequest;
+        $request->username = 'valid_username';
+        $request->password = 'valid_password';
+
+        $response = TRUE; // use fixtures
+
+        $this->client->expects($this->any())
+                     ->method('Login')
+                     ->will($this->returnValue($response));
+
+        $this->assertTrue($response);
+
     }
 
+    public function testLoginFailure() 
+    {
+        $request = new LoginRequest;
+        $request->username = 'invalid_username';
+        $request->password = 'invalid_password';
 
+        $response = FALSE; // use fixtures
+        
+        $this->client->expects($this->any())
+                     ->method('Login')
+                     ->will($this->returnValue($response));
 
-    public function testLogin() {}
+        $this->assertFalse($response);
+    }
+       
 
     public function testLoginWithToken() {}
 

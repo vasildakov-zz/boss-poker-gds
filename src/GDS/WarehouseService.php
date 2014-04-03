@@ -63,10 +63,8 @@ class WarehouseService extends \SoapClient {
 		);
 
 
-	/**
-	 * constructor
-	 */
-	public function __construct($wsdl = "https://poker.pb.mt.bosscasinos.com/GDS/WarehouseServices.asmx?WSDL", $options = array()) 
+
+	public function __construct($wsdl = "", $options = array()) 
 	{
 		if( !$wsdl ) throw new \InvalidArgumentException;
 		
