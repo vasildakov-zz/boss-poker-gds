@@ -409,57 +409,42 @@ $coverage->setData(array (
     array (
       0 => 'WarehouseServiceTest::testConstruct',
       1 => 'WarehouseServiceTest::testInheritance',
-      2 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
-      3 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+      2 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     73 => 
     array (
       0 => 'WarehouseServiceTest::testConstruct',
       1 => 'WarehouseServiceTest::testInheritance',
-      2 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
-      3 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     74 => 
     array (
       0 => 'WarehouseServiceTest::testConstruct',
       1 => 'WarehouseServiceTest::testInheritance',
-      2 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
-      3 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     75 => 
     array (
       0 => 'WarehouseServiceTest::testConstruct',
       1 => 'WarehouseServiceTest::testInheritance',
-      2 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
-      3 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     76 => 
     array (
       0 => 'WarehouseServiceTest::testConstruct',
       1 => 'WarehouseServiceTest::testInheritance',
-      2 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
-      3 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     77 => 
     array (
       0 => 'WarehouseServiceTest::testConstruct',
       1 => 'WarehouseServiceTest::testInheritance',
-      2 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
-      3 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     78 => 
     array (
       0 => 'WarehouseServiceTest::testConstruct',
       1 => 'WarehouseServiceTest::testInheritance',
-      2 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
-      3 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     79 => 
     array (
       0 => 'WarehouseServiceTest::testConstruct',
       1 => 'WarehouseServiceTest::testInheritance',
-      2 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
-      3 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     88 => 
     array (
@@ -821,7 +806,6 @@ $coverage->setTests(array (
   'GenericPortalAdapterTest::testGetPlayerRegistrationLevels' => 0,
   'WarehouseServiceTest::testConstruct' => 0,
   'WarehouseServiceTest::testInheritance' => 0,
-  'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity' => 0,
   'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed' => 0,
 ));
 
@@ -830,21 +814,6 @@ $filter->setBlacklistedFiles(array (
   '/var/www/boss-poker-gds/tests/GenericPortalAdapter/GenericPortalAdapterTest.php' => true,
   0 => true,
   '/usr/local/bin/phpunit' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Dumper.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Escaper.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Exception/DumpException.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Exception/ExceptionInterface.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Exception/ParseException.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Exception/RuntimeException.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Inline.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Parser.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/DumperTest.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/InlineTest.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/ParseExceptionTest.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/ParserTest.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Tests/YamlTest.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Unescaper.php' => true,
-  '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Yaml.php' => true,
   '/var/www/boss-poker-gds/vendor/composer/ClassLoader.php' => true,
   '/var/www/boss-poker-gds/vendor/composer/autoload_classmap.php' => true,
   '/var/www/boss-poker-gds/vendor/composer/autoload_namespaces.php' => true,
