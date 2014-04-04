@@ -116,6 +116,13 @@ $coverage->setData(array (
     ),
     31 => NULL,
   ),
+  '/var/www/boss-poker-gds/src/GDS/UsercustService.php' => 
+  array (
+    19 => 
+    array (
+      0 => 'UsercustServiceTest::testUsercustServiceHasMethods',
+    ),
+  ),
   '/var/www/boss-poker-gds/config/config.php' => 
   array (
     3 => 
@@ -458,6 +465,7 @@ $coverage->setTests(array (
   'GenericPortalAdapterTest::testRegisterRequestInstance' => 0,
   'GenericPortalAdapterTest::testLoginSuccess' => 0,
   'GenericPortalAdapterTest::testLoginFailure' => 0,
+  'UsercustServiceTest::testUsercustServiceHasMethods' => 0,
   'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1' => 0,
   'WarehouseServiceTest::testConstruct' => 0,
   'WarehouseServiceTest::testWarehouseServiceInheritance' => 0,
@@ -492,6 +500,7 @@ $filter->setBlacklistedFiles(array (
   '/var/www/boss-poker-gds/vendor/composer/autoload_psr4.php' => true,
   '/var/www/boss-poker-gds/vendor/composer/autoload_real.php' => true,
   '/var/www/boss-poker-gds/tests/GpPortalServicesTest/GpPortalServicesServiceTest.php' => true,
+  '/var/www/boss-poker-gds/tests/UsercustServiceTest/UsercustServiceTest.php' => true,
   '/var/www/boss-poker-gds/tests/WarehouseServiceTest/PlayerPokerGamingActivityRequestTest.php' => true,
   '/var/www/boss-poker-gds/tests/WarehouseServiceTest/WarehouseServiceTest.php' => true,
   '/var/www/boss-poker-gds/tests/WebServiceTest/WebServiceTest.php' => true,

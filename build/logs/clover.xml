@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1396640265">
-  <project timestamp="1396640265">
+<coverage generated="1396649527">
+  <project timestamp="1396649527">
     <file name="/var/www/boss-poker-gds/config/config.php">
       <line num="3" type="stmt" count="1"/>
       <line num="5" type="stmt" count="1"/>
@@ -32,6 +32,14 @@
         <line num="44" type="method" name="Login" crap="2" count="0"/>
         <line num="46" type="stmt" count="0"/>
         <metrics loc="139" ncloc="131" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="8" elements="12" coveredelements="10"/>
+      </file>
+      <file name="/var/www/boss-poker-gds/src/GDS/UsercustService.php">
+        <class name="UsercustService" namespace="VasilDakov\GDS">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="16" type="method" name="__construct" crap="1" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <metrics loc="102" ncloc="47" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </file>
       <file name="/var/www/boss-poker-gds/src/GDS/WarehouseService.php">
         <class name="WarehouseService" namespace="VasilDakov\GDS">
@@ -171,6 +179,6 @@
         <metrics loc="45" ncloc="45" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="1" elements="11" coveredelements="2"/>
       </file>
     </package>
-    <metrics files="5" loc="624" ncloc="480" classes="4" methods="31" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="107" coveredstatements="28" elements="138" coveredelements="33"/>
+    <metrics files="6" loc="726" ncloc="527" classes="5" methods="32" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="108" coveredstatements="29" elements="140" coveredelements="35"/>
   </project>
 </coverage>

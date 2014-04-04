@@ -1,4 +1,4 @@
-Poker GDS 7.3.1 Client
+PHP client library for BossMedia Poker GDS 7.3.1 API
 =======================
 
 [![Build Status](https://travis-ci.org/vasildakov/boss-poker-gds.svg?branch=master)](https://travis-ci.org/vasildakov/boss-poker-gds)
@@ -16,6 +16,26 @@ access the GDS Interface.
 The GDS provides an interface for partners to retrieve their raw gaming data on a daily
 basis.
 
+
+Installation
+------------
+
+To install boss-poker-gds with Composer, just add the following to your composer.json file:
+
+```js
+// composer.json
+{
+    "require-dev": {
+        "vasildakov/boss-poker-gds": "dev-master"
+    }
+}
+```
+
+Then, you can install the new dependencies by running Composer’s update command from the directory where your `composer.json` file is located:
+
+```sh
+$ php composer.phar install --dev
+```
 
 Overview
 ------------
