@@ -1,7 +1,7 @@
 <?php
 namespace VasilDakov\GDS\WarehouseService;
 
-class Warehouse_PlayerPokerGamingActivityResponse {
+class PlayerPokerGamingActivityResponse {
 
 	/**
 	 * @var string

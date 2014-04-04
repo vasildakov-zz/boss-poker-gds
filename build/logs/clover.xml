@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1396561177">
-  <project timestamp="1396561177">
+<coverage generated="1396640265">
+  <project timestamp="1396640265">
+    <file name="/var/www/boss-poker-gds/config/config.php">
+      <line num="3" type="stmt" count="1"/>
+      <line num="5" type="stmt" count="1"/>
+      <line num="6" type="stmt" count="1"/>
+      <line num="8" type="stmt" count="1"/>
+      <line num="9" type="stmt" count="1"/>
+      <line num="10" type="stmt" count="1"/>
+      <line num="11" type="stmt" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <metrics loc="13" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="9" coveredelements="9"/>
+    </file>
     <package name="VasilDakov\GDS">
       <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter.php">
         <class name="GenericPortalAdapter" namespace="VasilDakov\GDS">
@@ -22,119 +35,104 @@
       </file>
       <file name="/var/www/boss-poker-gds/src/GDS/WarehouseService.php">
         <class name="WarehouseService" namespace="VasilDakov\GDS">
-          <metrics methods="21" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="88" coveredstatements="8" elements="109" coveredelements="9"/>
+          <metrics methods="22" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="72" coveredstatements="8" elements="94" coveredelements="9"/>
         </class>
-        <line num="13" type="stmt" count="1"/>
-        <line num="67" type="method" name="__construct" crap="4" count="3"/>
-        <line num="69" type="stmt" count="3"/>
-        <line num="71" type="stmt" count="2"/>
-        <line num="72" type="stmt" count="2"/>
-        <line num="73" type="stmt" count="2"/>
-        <line num="74" type="stmt" count="2"/>
-        <line num="75" type="stmt" count="2"/>
-        <line num="76" type="stmt" count="2"/>
-        <line num="77" type="stmt" count="2"/>
-        <line num="84" type="method" name="Warehouse_PlayerPokerGamingActivity" crap="2" count="0"/>
-        <line num="86" type="stmt" count="0"/>
-        <line num="87" type="stmt" count="0"/>
-        <line num="89" type="stmt" count="0"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="69" type="method" name="__construct" crap="4" count="6"/>
+        <line num="71" type="stmt" count="6"/>
+        <line num="73" type="stmt" count="6"/>
+        <line num="74" type="stmt" count="6"/>
+        <line num="75" type="stmt" count="6"/>
+        <line num="76" type="stmt" count="6"/>
+        <line num="77" type="stmt" count="6"/>
+        <line num="78" type="stmt" count="6"/>
+        <line num="79" type="stmt" count="6"/>
+        <line num="88" type="method" name="getAggCustProdDaily" crap="2" count="0"/>
         <line num="90" type="stmt" count="0"/>
-        <line num="99" type="method" name="Warehouse_PlayerRealMoneyTransaction" crap="2" count="0"/>
-        <line num="101" type="stmt" count="0"/>
-        <line num="102" type="stmt" count="0"/>
-        <line num="104" type="stmt" count="0"/>
+        <line num="91" type="stmt" count="0"/>
+        <line num="93" type="stmt" count="0"/>
+        <line num="103" type="method" name="getAggLog" crap="2" count="0"/>
         <line num="105" type="stmt" count="0"/>
-        <line num="113" type="method" name="Warehouse_PlayerBonusMoneyTransaction" crap="2" count="0"/>
-        <line num="115" type="stmt" count="0"/>
-        <line num="116" type="stmt" count="0"/>
-        <line num="118" type="stmt" count="0"/>
-        <line num="119" type="stmt" count="0"/>
-        <line num="127" type="method" name="Warehouse_DimensionPlayer" crap="2" count="0"/>
-        <line num="129" type="stmt" count="0"/>
-        <line num="130" type="stmt" count="0"/>
-        <line num="132" type="stmt" count="0"/>
-        <line num="133" type="stmt" count="0"/>
-        <line num="141" type="method" name="Warehouse_DimensionPlayerAffiliate" crap="2" count="0"/>
-        <line num="143" type="stmt" count="0"/>
-        <line num="144" type="stmt" count="0"/>
-        <line num="146" type="stmt" count="0"/>
-        <line num="147" type="stmt" count="0"/>
-        <line num="155" type="method" name="Warehouse_DimensionGame" crap="2" count="0"/>
-        <line num="157" type="stmt" count="0"/>
-        <line num="158" type="stmt" count="0"/>
-        <line num="160" type="stmt" count="0"/>
-        <line num="161" type="stmt" count="0"/>
-        <line num="169" type="method" name="Warehouse_DimensionProduct" crap="2" count="0"/>
-        <line num="171" type="stmt" count="0"/>
-        <line num="172" type="stmt" count="0"/>
-        <line num="174" type="stmt" count="0"/>
-        <line num="175" type="stmt" count="0"/>
-        <line num="183" type="method" name="Warehouse_GroupGameSession" crap="2" count="0"/>
-        <line num="185" type="stmt" count="0"/>
-        <line num="186" type="stmt" count="0"/>
-        <line num="188" type="stmt" count="0"/>
-        <line num="189" type="stmt" count="0"/>
-        <line num="197" type="method" name="Warehouse_ReferCampaignReport" crap="2" count="0"/>
-        <line num="199" type="stmt" count="0"/>
-        <line num="200" type="stmt" count="0"/>
-        <line num="202" type="stmt" count="0"/>
-        <line num="203" type="stmt" count="0"/>
-        <line num="211" type="method" name="Warehouse_TodaysAggScriptRuns" crap="2" count="0"/>
+        <line num="106" type="stmt" count="0"/>
+        <line num="108" type="stmt" count="0"/>
+        <line num="118" type="method" name="getAggMttDaily" crap="2" count="0"/>
+        <line num="120" type="stmt" count="0"/>
+        <line num="121" type="stmt" count="0"/>
+        <line num="123" type="stmt" count="0"/>
+        <line num="133" type="method" name="getAggPokerDaily" crap="2" count="0"/>
+        <line num="135" type="stmt" count="0"/>
+        <line num="136" type="stmt" count="0"/>
+        <line num="138" type="stmt" count="0"/>
+        <line num="148" type="method" name="getAggProdDailyPlayerNumbers" crap="2" count="0"/>
+        <line num="150" type="stmt" count="0"/>
+        <line num="151" type="stmt" count="0"/>
+        <line num="153" type="stmt" count="0"/>
+        <line num="163" type="method" name="getAggProdGroupDailyRegistrations" crap="2" count="0"/>
+        <line num="165" type="stmt" count="0"/>
+        <line num="166" type="stmt" count="0"/>
+        <line num="168" type="stmt" count="0"/>
+        <line num="178" type="method" name="getAggSttDaily" crap="2" count="0"/>
+        <line num="180" type="stmt" count="0"/>
+        <line num="181" type="stmt" count="0"/>
+        <line num="183" type="stmt" count="0"/>
+        <line num="193" type="method" name="getAggTableDaily" crap="2" count="0"/>
+        <line num="195" type="stmt" count="0"/>
+        <line num="196" type="stmt" count="0"/>
+        <line num="198" type="stmt" count="0"/>
+        <line num="208" type="method" name="getCustomerAccountStates" crap="2" count="0"/>
+        <line num="210" type="stmt" count="0"/>
+        <line num="211" type="stmt" count="0"/>
         <line num="213" type="stmt" count="0"/>
-        <line num="214" type="stmt" count="0"/>
-        <line num="216" type="stmt" count="0"/>
-        <line num="217" type="stmt" count="0"/>
-        <line num="225" type="method" name="Warehouse_CustomerAccountStates" crap="2" count="0"/>
-        <line num="227" type="stmt" count="0"/>
+        <line num="223" type="method" name="getDailyBalanceOut" crap="2" count="0"/>
+        <line num="225" type="stmt" count="0"/>
+        <line num="226" type="stmt" count="0"/>
         <line num="228" type="stmt" count="0"/>
-        <line num="230" type="stmt" count="0"/>
-        <line num="231" type="stmt" count="0"/>
-        <line num="239" type="method" name="Warehouse_AggPokerDaily" crap="2" count="0"/>
+        <line num="238" type="method" name="getDimensionGame" crap="2" count="0"/>
+        <line num="240" type="stmt" count="0"/>
         <line num="241" type="stmt" count="0"/>
-        <line num="242" type="stmt" count="0"/>
-        <line num="244" type="stmt" count="0"/>
-        <line num="245" type="stmt" count="0"/>
-        <line num="253" type="method" name="Warehouse_AggCustProdDaily" crap="2" count="0"/>
+        <line num="243" type="stmt" count="0"/>
+        <line num="253" type="method" name="getDimensionPlayer" crap="2" count="0"/>
         <line num="255" type="stmt" count="0"/>
         <line num="256" type="stmt" count="0"/>
         <line num="258" type="stmt" count="0"/>
-        <line num="259" type="stmt" count="0"/>
-        <line num="267" type="method" name="Warehouse_AggTableDaily" crap="2" count="0"/>
-        <line num="269" type="stmt" count="0"/>
+        <line num="268" type="method" name="getDimensionPlayerAffiliate" crap="2" count="0"/>
         <line num="270" type="stmt" count="0"/>
-        <line num="272" type="stmt" count="0"/>
+        <line num="271" type="stmt" count="0"/>
         <line num="273" type="stmt" count="0"/>
-        <line num="281" type="method" name="Warehouse_AggSttDaily" crap="2" count="0"/>
-        <line num="283" type="stmt" count="0"/>
-        <line num="284" type="stmt" count="0"/>
+        <line num="283" type="method" name="getDimensionProduct" crap="2" count="0"/>
+        <line num="285" type="stmt" count="0"/>
         <line num="286" type="stmt" count="0"/>
-        <line num="287" type="stmt" count="0"/>
-        <line num="295" type="method" name="Warehouse_AggMttDaily" crap="2" count="0"/>
-        <line num="297" type="stmt" count="0"/>
-        <line num="298" type="stmt" count="0"/>
+        <line num="288" type="stmt" count="0"/>
+        <line num="298" type="method" name="getGroupGameSession" crap="2" count="0"/>
         <line num="300" type="stmt" count="0"/>
         <line num="301" type="stmt" count="0"/>
-        <line num="309" type="method" name="Warehouse_AggProdDailyPlayerNumbers" crap="2" count="0"/>
-        <line num="311" type="stmt" count="0"/>
-        <line num="312" type="stmt" count="0"/>
-        <line num="314" type="stmt" count="0"/>
+        <line num="303" type="stmt" count="0"/>
+        <line num="313" type="method" name="getPlayerBonusMoneyTransaction" crap="2" count="0"/>
         <line num="315" type="stmt" count="0"/>
-        <line num="322" type="method" name="Warehouse_AggProdGroupDailyRegistrations" crap="2" count="0"/>
-        <line num="324" type="stmt" count="0"/>
-        <line num="325" type="stmt" count="0"/>
-        <line num="327" type="stmt" count="0"/>
-        <line num="328" type="stmt" count="0"/>
-        <line num="336" type="method" name="Warehouse_AggLog" crap="2" count="0"/>
-        <line num="338" type="stmt" count="0"/>
-        <line num="339" type="stmt" count="0"/>
-        <line num="341" type="stmt" count="0"/>
-        <line num="342" type="stmt" count="0"/>
-        <line num="350" type="method" name="Warehouse_DailyBalanceOut" crap="2" count="0"/>
-        <line num="352" type="stmt" count="0"/>
-        <line num="353" type="stmt" count="0"/>
-        <line num="355" type="stmt" count="0"/>
-        <line num="356" type="stmt" count="0"/>
-        <metrics loc="358" ncloc="271" classes="1" methods="21" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="89" coveredstatements="9" elements="110" coveredelements="10"/>
+        <line num="316" type="stmt" count="0"/>
+        <line num="318" type="stmt" count="0"/>
+        <line num="328" type="method" name="getPlayerRealMoneyTransaction" crap="2" count="0"/>
+        <line num="330" type="stmt" count="0"/>
+        <line num="331" type="stmt" count="0"/>
+        <line num="333" type="stmt" count="0"/>
+        <line num="342" type="method" name="getReferCampaignReport" crap="2" count="0"/>
+        <line num="344" type="stmt" count="0"/>
+        <line num="345" type="stmt" count="0"/>
+        <line num="347" type="stmt" count="0"/>
+        <line num="357" type="method" name="getSessionStakes" crap="2" count="0"/>
+        <line num="359" type="stmt" count="0"/>
+        <line num="360" type="stmt" count="0"/>
+        <line num="362" type="stmt" count="0"/>
+        <line num="363" type="stmt" count="0"/>
+        <line num="374" type="method" name="getTodaysAggScriptRuns" crap="2" count="0"/>
+        <line num="376" type="stmt" count="0"/>
+        <line num="377" type="stmt" count="0"/>
+        <line num="379" type="stmt" count="0"/>
+        <line num="389" type="method" name="getPlayerPokerGamingActivity" crap="2" count="0"/>
+        <line num="391" type="stmt" count="0"/>
+        <line num="392" type="stmt" count="0"/>
+        <line num="394" type="stmt" count="0"/>
+        <metrics loc="396" ncloc="260" classes="1" methods="22" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="73" coveredstatements="9" elements="95" coveredelements="10"/>
       </file>
     </package>
     <package name="VasilDakov\GDS\GenericPortalAdapter">
@@ -173,19 +171,6 @@
         <metrics loc="45" ncloc="45" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="1" elements="11" coveredelements="2"/>
       </file>
     </package>
-    <file name="/var/www/boss-poker-gds/src/GDS/config.php">
-      <line num="3" type="stmt" count="1"/>
-      <line num="5" type="stmt" count="1"/>
-      <line num="6" type="stmt" count="1"/>
-      <line num="8" type="stmt" count="1"/>
-      <line num="9" type="stmt" count="1"/>
-      <line num="10" type="stmt" count="1"/>
-      <line num="11" type="stmt" count="1"/>
-      <line num="12" type="stmt" count="1"/>
-      <line num="13" type="stmt" count="1"/>
-      <line num="14" type="stmt" count="1"/>
-      <metrics loc="13" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="9" coveredelements="9"/>
-    </file>
-    <metrics files="5" loc="586" ncloc="491" classes="4" methods="30" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="123" coveredstatements="28" elements="153" coveredelements="33"/>
+    <metrics files="5" loc="624" ncloc="480" classes="4" methods="31" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="107" coveredstatements="28" elements="138" coveredelements="33"/>
   </project>
 </coverage>

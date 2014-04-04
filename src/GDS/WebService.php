@@ -13,31 +13,82 @@ use SoapClient;
 
 class WebService extends \SoapClient {
 
-	public function __construct() 
-	{
+	public function __construct() { }
 
-	}
 
-	public function Poker_CheckMttTableEnd() {}
+	/**
+	 * 8.1
+	 * @param CheckMttTableEndRequest $request
+	*/
+	public function Poker_CheckMttTableEnd(CheckMttTableEndRequest $request) {}
 
-	public function Poker_GetData() {}
 
-	public function Poker_GetFirstRound() {}
+	/**
+	 * 8.2 Gets the data of the round.
+	 * @param GetDataRequest $request
+	 */
+	public function Poker_GetData(GetDataRequest $request) {}
 
-	public function Poker_GetLastTableId() {}
 
-	public function Poker_GetMttRoundId() {}
+	/**
+	 * 8.3
+	 * @param GetFirstRoundRequest $request
+	 */
+	public function Poker_GetFirstRound(GetFirstRoundRequest $request) {}
 
-	public function Poker_GetMttTableId() {}
 
-	public function Poker_GetNextRound() {}
+	/**
+	 * 8.4
+	 * @param GetLastTableIdRequest $request
+	 */
+	public function Poker_GetLastTableId(GetLastTableIdRequest $request) {}
 
-	public function Poker_GetTableId() {}
 
-	public function Poker_GetTournamentId() {}
+	/**
+	 * 8.5
+	 * @param GetMttRoundIdRequest $request
+	 */
+	public function Poker_GetMttRoundId(GetMttRoundIdRequest $request) {}
 
-	public function Poker_UserPlayInfo() {}
 
-	public function Poker_UserPlayNBlindsInfo() {}
+	/**
+	 * 8.6
+	 * @param GetMttTableIdRequest $request
+	 */
+	public function Poker_GetMttTableId(GetMttTableIdRequest $request) {}
+
+
+	/**
+	 * 8.7
+	 * @param GetNextRoundRequest $request
+	 */
+	public function Poker_GetNextRound(GetNextRoundRequest $request) {}
+
+	/**
+	 * 8.8
+	 * @param GetTableIdRequest $request
+	 */
+	public function Poker_GetTableId(GetTableIdRequest $request) {}
+
+
+	/**
+	 * 8.9
+	 * @param GetTournamentIdRequest $request
+	 */
+	public function Poker_GetTournamentId(GetTournamentIdRequest $request) {}
+
+
+	/**
+	 * 8.10 The method will return an XML answer with aggregated data for all the poker players of the gaming system that have played.
+	 * @param UserPlayInfoRequest $request
+	 */
+	public function Poker_UserPlayInfo(UserPlayInfoRequest $request) {}
+
+
+	/**
+	 * 8.11
+	 * @param UserPlayNBlindsInfoRequest $request
+	 */
+	public function Poker_UserPlayNBlindsInfo(UserPlayNBlindsInfoRequest $request) {}
 
 }

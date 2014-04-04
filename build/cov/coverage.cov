@@ -116,209 +116,237 @@ $coverage->setData(array (
     ),
     31 => NULL,
   ),
-  '/var/www/boss-poker-gds/src/GDS/WarehouseService.php' => 
+  '/var/www/boss-poker-gds/config/config.php' => 
   array (
+    3 => 
+    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+    ),
+    5 => 
+    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+    ),
+    6 => 
+    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+    ),
+    8 => 
+    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+    ),
+    9 => 
+    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+    ),
+    10 => 
+    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+    ),
+    11 => 
+    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+    ),
+    12 => 
+    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+    ),
     13 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
     ),
-    69 => 
+    14 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
-      1 => 'WarehouseServiceTest::testInheritance',
-      2 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+    ),
+  ),
+  '/var/www/boss-poker-gds/src/GDS/WarehouseService.php' => 
+  array (
+    14 => 
+    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
     ),
     71 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
-      1 => 'WarehouseServiceTest::testInheritance',
-    ),
-    72 => 
-    array (
-      0 => 'WarehouseServiceTest::testConstruct',
-      1 => 'WarehouseServiceTest::testInheritance',
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+      1 => 'WarehouseServiceTest::testConstruct',
+      2 => 'WarehouseServiceTest::testWarehouseServiceInheritance',
+      3 => 'WarehouseServiceTest::testWarehouseServiceHasAllMethods',
+      4 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
+      5 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     73 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
-      1 => 'WarehouseServiceTest::testInheritance',
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+      1 => 'WarehouseServiceTest::testConstruct',
+      2 => 'WarehouseServiceTest::testWarehouseServiceInheritance',
+      3 => 'WarehouseServiceTest::testWarehouseServiceHasAllMethods',
+      4 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
+      5 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     74 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
-      1 => 'WarehouseServiceTest::testInheritance',
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+      1 => 'WarehouseServiceTest::testConstruct',
+      2 => 'WarehouseServiceTest::testWarehouseServiceInheritance',
+      3 => 'WarehouseServiceTest::testWarehouseServiceHasAllMethods',
+      4 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
+      5 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     75 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
-      1 => 'WarehouseServiceTest::testInheritance',
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+      1 => 'WarehouseServiceTest::testConstruct',
+      2 => 'WarehouseServiceTest::testWarehouseServiceInheritance',
+      3 => 'WarehouseServiceTest::testWarehouseServiceHasAllMethods',
+      4 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
+      5 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     76 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
-      1 => 'WarehouseServiceTest::testInheritance',
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+      1 => 'WarehouseServiceTest::testConstruct',
+      2 => 'WarehouseServiceTest::testWarehouseServiceInheritance',
+      3 => 'WarehouseServiceTest::testWarehouseServiceHasAllMethods',
+      4 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
+      5 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     77 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
-      1 => 'WarehouseServiceTest::testInheritance',
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+      1 => 'WarehouseServiceTest::testConstruct',
+      2 => 'WarehouseServiceTest::testWarehouseServiceInheritance',
+      3 => 'WarehouseServiceTest::testWarehouseServiceHasAllMethods',
+      4 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
+      5 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
-    86 => 
+    78 => 
     array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+      1 => 'WarehouseServiceTest::testConstruct',
+      2 => 'WarehouseServiceTest::testWarehouseServiceInheritance',
+      3 => 'WarehouseServiceTest::testWarehouseServiceHasAllMethods',
+      4 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
+      5 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
-    87 => 
+    79 => 
     array (
-    ),
-    89 => 
-    array (
+      0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
+      1 => 'WarehouseServiceTest::testConstruct',
+      2 => 'WarehouseServiceTest::testWarehouseServiceInheritance',
+      3 => 'WarehouseServiceTest::testWarehouseServiceHasAllMethods',
+      4 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity',
+      5 => 'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed',
     ),
     90 => 
     array (
     ),
-    91 => NULL,
-    101 => 
+    91 => 
     array (
     ),
-    102 => 
+    93 => 
     array (
     ),
-    104 => 
-    array (
-    ),
+    94 => NULL,
     105 => 
     array (
     ),
-    106 => NULL,
-    115 => 
+    106 => 
     array (
     ),
-    116 => 
+    108 => 
     array (
     ),
-    118 => 
+    109 => NULL,
+    120 => 
     array (
     ),
-    119 => 
+    121 => 
     array (
     ),
-    120 => NULL,
-    129 => 
+    123 => 
     array (
     ),
-    130 => 
+    124 => NULL,
+    135 => 
     array (
     ),
-    132 => 
+    136 => 
     array (
     ),
-    133 => 
+    138 => 
     array (
     ),
-    134 => NULL,
-    143 => 
+    139 => NULL,
+    150 => 
     array (
     ),
-    144 => 
+    151 => 
     array (
     ),
-    146 => 
+    153 => 
     array (
     ),
-    147 => 
+    154 => NULL,
+    165 => 
     array (
     ),
-    148 => NULL,
-    157 => 
+    166 => 
     array (
     ),
-    158 => 
+    168 => 
     array (
     ),
-    160 => 
+    169 => NULL,
+    180 => 
     array (
     ),
-    161 => 
+    181 => 
     array (
     ),
-    162 => NULL,
-    171 => 
+    183 => 
     array (
     ),
-    172 => 
+    184 => NULL,
+    195 => 
     array (
     ),
-    174 => 
+    196 => 
     array (
     ),
-    175 => 
+    198 => 
     array (
     ),
-    176 => NULL,
-    185 => 
+    199 => NULL,
+    210 => 
     array (
     ),
-    186 => 
+    211 => 
     array (
     ),
-    188 => 
-    array (
-    ),
-    189 => 
-    array (
-    ),
-    190 => NULL,
-    199 => 
-    array (
-    ),
-    200 => 
-    array (
-    ),
-    202 => 
-    array (
-    ),
-    203 => 
-    array (
-    ),
-    204 => NULL,
     213 => 
     array (
     ),
-    214 => 
+    214 => NULL,
+    225 => 
     array (
     ),
-    216 => 
-    array (
-    ),
-    217 => 
-    array (
-    ),
-    218 => NULL,
-    227 => 
+    226 => 
     array (
     ),
     228 => 
     array (
     ),
-    230 => 
+    229 => NULL,
+    240 => 
     array (
     ),
-    231 => 
-    array (
-    ),
-    232 => NULL,
     241 => 
     array (
     ),
-    242 => 
+    243 => 
     array (
     ),
-    244 => 
-    array (
-    ),
-    245 => 
-    array (
-    ),
-    246 => NULL,
+    244 => NULL,
     255 => 
     array (
     ),
@@ -328,144 +356,100 @@ $coverage->setData(array (
     258 => 
     array (
     ),
-    259 => 
-    array (
-    ),
-    260 => NULL,
-    269 => 
-    array (
-    ),
+    259 => NULL,
     270 => 
     array (
     ),
-    272 => 
+    271 => 
     array (
     ),
     273 => 
     array (
     ),
     274 => NULL,
-    283 => 
-    array (
-    ),
-    284 => 
+    285 => 
     array (
     ),
     286 => 
     array (
     ),
-    287 => 
+    288 => 
     array (
     ),
-    288 => NULL,
-    297 => 
-    array (
-    ),
-    298 => 
-    array (
-    ),
+    289 => NULL,
     300 => 
     array (
     ),
     301 => 
     array (
     ),
-    302 => NULL,
-    311 => 
+    303 => 
     array (
     ),
-    312 => 
-    array (
-    ),
-    314 => 
-    array (
-    ),
+    304 => NULL,
     315 => 
     array (
     ),
-    316 => NULL,
-    324 => 
+    316 => 
     array (
     ),
-    325 => 
+    318 => 
     array (
     ),
-    327 => 
+    319 => NULL,
+    330 => 
     array (
     ),
-    328 => 
+    331 => 
     array (
     ),
-    329 => NULL,
-    338 => 
+    333 => 
     array (
     ),
-    339 => 
+    334 => NULL,
+    344 => 
     array (
     ),
-    341 => 
+    345 => 
     array (
     ),
-    342 => 
+    347 => 
     array (
     ),
-    343 => NULL,
-    352 => 
+    348 => NULL,
+    359 => 
     array (
     ),
-    353 => 
+    360 => 
     array (
     ),
-    355 => 
+    362 => 
     array (
     ),
-    356 => 
+    363 => 
     array (
     ),
-    357 => NULL,
-  ),
-  '/var/www/boss-poker-gds/src/GDS/config.php' => 
-  array (
-    3 => 
+    364 => NULL,
+    376 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
     ),
-    5 => 
+    377 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
     ),
-    6 => 
+    379 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
     ),
-    8 => 
+    380 => NULL,
+    391 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
     ),
-    9 => 
+    392 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
     ),
-    10 => 
+    394 => 
     array (
-      0 => 'WarehouseServiceTest::testConstruct',
     ),
-    11 => 
-    array (
-      0 => 'WarehouseServiceTest::testConstruct',
-    ),
-    12 => 
-    array (
-      0 => 'WarehouseServiceTest::testConstruct',
-    ),
-    13 => 
-    array (
-      0 => 'WarehouseServiceTest::testConstruct',
-    ),
-    14 => 
-    array (
-      0 => 'WarehouseServiceTest::testConstruct',
-    ),
+    395 => NULL,
   ),
 ));
 $coverage->setTests(array (
@@ -474,14 +458,17 @@ $coverage->setTests(array (
   'GenericPortalAdapterTest::testRegisterRequestInstance' => 0,
   'GenericPortalAdapterTest::testLoginSuccess' => 0,
   'GenericPortalAdapterTest::testLoginFailure' => 0,
+  'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1' => 0,
   'WarehouseServiceTest::testConstruct' => 0,
-  'WarehouseServiceTest::testInheritance' => 0,
+  'WarehouseServiceTest::testWarehouseServiceInheritance' => 0,
+  'WarehouseServiceTest::testWarehouseServiceHasAllMethods' => 0,
+  'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity' => 0,
   'WarehouseServiceTest::testThrowsExceptionIfNonNumericIsPassed' => 0,
 ));
 
 $filter = $coverage->filter();
 $filter->setBlacklistedFiles(array (
-  '/var/www/boss-poker-gds/tests/GenericPortalAdapter/GenericPortalAdapterTest.php' => true,
+  '/var/www/boss-poker-gds/tests/GenericPortalAdapterTest/GenericPortalAdapterTest.php' => true,
   0 => true,
   '/usr/local/bin/phpunit' => true,
   '/var/www/boss-poker-gds/vendor/symfony/yaml/Symfony/Component/Yaml/Dumper.php' => true,
@@ -504,8 +491,10 @@ $filter->setBlacklistedFiles(array (
   '/var/www/boss-poker-gds/vendor/composer/autoload_namespaces.php' => true,
   '/var/www/boss-poker-gds/vendor/composer/autoload_psr4.php' => true,
   '/var/www/boss-poker-gds/vendor/composer/autoload_real.php' => true,
-  '/var/www/boss-poker-gds/tests/GpPortalServicesService/GpPortalServicesServiceTest.php' => true,
-  '/var/www/boss-poker-gds/tests/WarehouseService/WarehouseServiceTest.php' => true,
+  '/var/www/boss-poker-gds/tests/GpPortalServicesTest/GpPortalServicesServiceTest.php' => true,
+  '/var/www/boss-poker-gds/tests/WarehouseServiceTest/PlayerPokerGamingActivityRequestTest.php' => true,
+  '/var/www/boss-poker-gds/tests/WarehouseServiceTest/WarehouseServiceTest.php' => true,
+  '/var/www/boss-poker-gds/tests/WebServiceTest/WebServiceTest.php' => true,
 ));
 $filter->setWhitelistedFiles(array (
 ));
