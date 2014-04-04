@@ -3,6 +3,8 @@ Poker GDS 7.3.1 Client
 
 [![Build Status](https://travis-ci.org/vasildakov/boss-poker-gds.svg?branch=master)](https://travis-ci.org/vasildakov/boss-poker-gds)
 [![Coverage Status](https://coveralls.io/repos/vasildakov/boss-poker-gds/badge.png)](https://coveralls.io/r/vasildakov/boss-poker-gds)
+[![Latest Stable Version](https://poser.pugx.org/vasildakov/boss-poker-gds/v/stable.png)](https://packagist.org/packages/vasildakov/boss-poker-gds)
+
 
 Introduction
 ------------
