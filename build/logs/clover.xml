@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1396649527">
-  <project timestamp="1396649527">
+<coverage generated="1396659962">
+  <project timestamp="1396659962">
     <file name="/var/www/boss-poker-gds/config/config.php">
       <line num="3" type="stmt" count="1"/>
       <line num="5" type="stmt" count="1"/>
@@ -143,6 +143,54 @@
         <metrics loc="396" ncloc="260" classes="1" methods="22" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="73" coveredstatements="9" elements="95" coveredelements="10"/>
       </file>
     </package>
+    <package name="VasilDakov\GDS\GenericPortalAdapter\Collection">
+      <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Collection/PlayerPropertyCollection.php">
+        <class name="PlayerPropertyCollection" namespace="VasilDakov\GDS\GenericPortalAdapter\Collection">
+          <metrics methods="11" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="10" elements="40" coveredelements="12"/>
+        </class>
+        <line num="9" type="method" name="__construct" crap="2.50" count="3"/>
+        <line num="11" type="stmt" count="3"/>
+        <line num="12" type="stmt" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="14" type="stmt" count="3"/>
+        <line num="17" type="method" name="count" crap="1" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="23" type="method" name="rewind" crap="2" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="29" type="method" name="key" crap="2" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="35" type="method" name="current" crap="2" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="41" type="method" name="valid" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="next" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="56" type="method" name="offsetSet" crap="6.74" count="1"/>
+        <line num="58" type="stmt" count="1"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="63" type="stmt" count="0"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="65" type="stmt" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="68" type="stmt" count="0"/>
+        <line num="75" type="method" name="offsetUnset" crap="6" count="0"/>
+        <line num="77" type="stmt" count="0"/>
+        <line num="78" type="stmt" count="0"/>
+        <line num="79" type="stmt" count="0"/>
+        <line num="81" type="stmt" count="0"/>
+        <line num="88" type="method" name="offsetGet" crap="2" count="1"/>
+        <line num="90" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="99" type="method" name="offsetExists" crap="2" count="0"/>
+        <line num="101" type="stmt" count="0"/>
+        <metrics loc="103" ncloc="86" classes="1" methods="11" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="10" elements="40" coveredelements="12"/>
+      </file>
+    </package>
     <package name="VasilDakov\GDS\GenericPortalAdapter">
       <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/LoginRequest.php">
         <class name="LoginRequest" namespace="VasilDakov\GDS\GenericPortalAdapter">
@@ -163,22 +211,23 @@
       </file>
       <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/RegisterRequest.php">
         <class name="RegisterRequest" namespace="VasilDakov\GDS\GenericPortalAdapter">
-          <metrics methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="1" elements="11" coveredelements="2"/>
+          <metrics methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="2" elements="12" coveredelements="3"/>
         </class>
-        <line num="24" type="method" name="__construct" crap="1" count="1"/>
-        <line num="27" type="stmt" count="1"/>
-        <line num="29" type="method" name="__get" crap="6" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="32" type="stmt" count="0"/>
+        <line num="26" type="method" name="__construct" crap="1" count="3"/>
+        <line num="28" type="stmt" count="3"/>
+        <line num="29" type="stmt" count="3"/>
+        <line num="31" type="method" name="__get" crap="6" count="0"/>
+        <line num="33" type="stmt" count="0"/>
         <line num="34" type="stmt" count="0"/>
-        <line num="37" type="method" name="__set" crap="6" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="40" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="39" type="method" name="__set" crap="6" count="0"/>
         <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
         <line num="43" type="stmt" count="0"/>
-        <metrics loc="45" ncloc="45" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="1" elements="11" coveredelements="2"/>
+        <line num="45" type="stmt" count="0"/>
+        <metrics loc="47" ncloc="47" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="2" elements="12" coveredelements="3"/>
       </file>
     </package>
-    <metrics files="6" loc="726" ncloc="527" classes="5" methods="32" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="108" coveredstatements="29" elements="140" coveredelements="35"/>
+    <metrics files="7" loc="831" ncloc="615" classes="6" methods="43" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="138" coveredstatements="40" elements="181" coveredelements="48"/>
   </project>
 </coverage>

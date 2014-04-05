@@ -2,6 +2,8 @@
 
 namespace VasilDakov\GDS\GenericPortalAdapter;
 
+use VasilDakov\GDS\GenericPortalAdapter\Collection\PlayerPropertyCollection;
+
 class RegisterRequest {
 
 	public $systemUID;
@@ -18,12 +20,12 @@ class RegisterRequest {
 
 	public $registrationLevel;
 
-	public $properties = array();
+	public $properties;
 
 
 	public function __construct() 
 	{
-		
+		$this->properties = new PlayerPropertyCollection;
 	}
 
 	public function __get($key) 

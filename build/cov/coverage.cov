@@ -57,33 +57,156 @@ $coverage->setData(array (
   ),
   '/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/RegisterRequest.php' => 
   array (
-    27 => 
+    28 => 
     array (
       0 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      1 => 'RegisterRequestTest::testRegisterRequestHasProperties',
+      2 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
     ),
-    31 => 
+    29 => 
+    array (
+      0 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      1 => 'RegisterRequestTest::testRegisterRequestHasProperties',
+      2 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    33 => 
     array (
     ),
-    32 => 
-    array (
-    ),
-    33 => NULL,
     34 => 
     array (
     ),
-    39 => 
-    array (
-    ),
-    40 => 
+    35 => NULL,
+    36 => 
     array (
     ),
     41 => 
     array (
     ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => NULL,
+  ),
+  '/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Collection/PlayerPropertyCollection.php' => 
+  array (
+    11 => 
+    array (
+      0 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      1 => 'RegisterRequestTest::testRegisterRequestHasProperties',
+      2 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    12 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+      0 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      1 => 'RegisterRequestTest::testRegisterRequestHasProperties',
+      2 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    19 => 
+    array (
+      0 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    20 => NULL,
+    25 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => NULL,
+    37 => 
+    array (
+    ),
+    38 => NULL,
     43 => 
     array (
     ),
     44 => NULL,
+    48 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+    58 => 
+    array (
+      0 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    61 => 
+    array (
+    ),
+    62 => NULL,
+    63 => 
+    array (
+    ),
+    64 => 
+    array (
+      0 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    65 => 
+    array (
+      0 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    66 => 
+    array (
+      0 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    67 => NULL,
+    68 => 
+    array (
+    ),
+    69 => NULL,
+    77 => 
+    array (
+    ),
+    78 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    80 => NULL,
+    81 => 
+    array (
+    ),
+    82 => NULL,
+    90 => 
+    array (
+      0 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    91 => 
+    array (
+      0 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    92 => 
+    array (
+      0 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
+    ),
+    93 => NULL,
+    101 => 
+    array (
+    ),
+    102 => NULL,
   ),
   '/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/LoginRequest.php' => 
   array (
@@ -465,6 +588,8 @@ $coverage->setTests(array (
   'GenericPortalAdapterTest::testRegisterRequestInstance' => 0,
   'GenericPortalAdapterTest::testLoginSuccess' => 0,
   'GenericPortalAdapterTest::testLoginFailure' => 0,
+  'RegisterRequestTest::testRegisterRequestHasProperties' => 0,
+  'RegisterRequestTest::testRegisterRequestPropertyProperties' => 0,
   'UsercustServiceTest::testUsercustServiceHasMethods' => 0,
   'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1' => 0,
   'WarehouseServiceTest::testConstruct' => 0,
@@ -499,6 +624,7 @@ $filter->setBlacklistedFiles(array (
   '/var/www/boss-poker-gds/vendor/composer/autoload_namespaces.php' => true,
   '/var/www/boss-poker-gds/vendor/composer/autoload_psr4.php' => true,
   '/var/www/boss-poker-gds/vendor/composer/autoload_real.php' => true,
+  '/var/www/boss-poker-gds/tests/GenericPortalAdapterTest/RegisterRequestTest.php' => true,
   '/var/www/boss-poker-gds/tests/GpPortalServicesTest/GpPortalServicesServiceTest.php' => true,
   '/var/www/boss-poker-gds/tests/UsercustServiceTest/UsercustServiceTest.php' => true,
   '/var/www/boss-poker-gds/tests/WarehouseServiceTest/PlayerPokerGamingActivityRequestTest.php' => true,
