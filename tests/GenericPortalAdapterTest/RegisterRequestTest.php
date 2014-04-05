@@ -46,7 +46,7 @@ class RegisterRequestTest extends \PHPUnit_Framework_TestCase {
 		// PlayerProperty must be empty
 		$this->assertEmpty( $collection->PlayerProperty );
 
-		
+
 		$collection->offsetSet('TrackingCampaign', 123456);
 		$collection->offsetSet('Username', 'usernamestring');
 		$collection->offsetSet('Password', '123abc789');
@@ -142,6 +142,11 @@ class RegisterRequestTest extends \PHPUnit_Framework_TestCase {
 
 		// Country
 		$this->assertArrayHasKey('Country', $collection->PlayerProperty);
+
+
+		#$request->properties = $collection;
+		#var_dump($request->properties->PlayerProperty);
+		#var_dump($request->properties->offsetGet('Username'));
 	}
 
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1396659962">
-  <project timestamp="1396659962">
+<coverage generated="1396706581">
+  <project timestamp="1396706581">
     <file name="/var/www/boss-poker-gds/config/config.php">
       <line num="3" type="stmt" count="1"/>
       <line num="5" type="stmt" count="1"/>
