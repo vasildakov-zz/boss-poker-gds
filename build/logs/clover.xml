@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1396706581">
-  <project timestamp="1396706581">
+<coverage generated="1396725407">
+  <project timestamp="1396725407">
     <file name="/var/www/boss-poker-gds/config/config.php">
       <line num="3" type="stmt" count="1"/>
       <line num="5" type="stmt" count="1"/>
@@ -17,21 +17,25 @@
     <package name="VasilDakov\GDS">
       <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter.php">
         <class name="GenericPortalAdapter" namespace="VasilDakov\GDS">
-          <metrics methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="8" elements="12" coveredelements="10"/>
+          <metrics methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="7" elements="16" coveredelements="8"/>
         </class>
-        <line num="26" type="method" name="__construct" crap="3" count="3"/>
-        <line num="28" type="stmt" count="3"/>
-        <line num="30" type="stmt" count="3"/>
-        <line num="31" type="stmt" count="3"/>
+        <line num="30" type="method" name="__construct" crap="3" count="3"/>
         <line num="32" type="stmt" count="3"/>
-        <line num="33" type="stmt" count="3"/>
         <line num="34" type="stmt" count="3"/>
         <line num="35" type="stmt" count="3"/>
-        <line num="38" type="method" name="Register" crap="1" count="1"/>
-        <line num="40" type="stmt" count="1"/>
-        <line num="44" type="method" name="Login" crap="2" count="0"/>
-        <line num="46" type="stmt" count="0"/>
-        <metrics loc="139" ncloc="131" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="8" elements="12" coveredelements="10"/>
+        <line num="36" type="stmt" count="3"/>
+        <line num="37" type="stmt" count="3"/>
+        <line num="38" type="stmt" count="3"/>
+        <line num="39" type="stmt" count="3"/>
+        <line num="42" type="method" name="Register" crap="2" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="51" type="method" name="Login" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <metrics loc="149" ncloc="141" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="7" elements="16" coveredelements="8"/>
       </file>
       <file name="/var/www/boss-poker-gds/src/GDS/UsercustService.php">
         <class name="UsercustService" namespace="VasilDakov\GDS">
@@ -191,26 +195,36 @@
         <metrics loc="103" ncloc="86" classes="1" methods="11" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="10" elements="40" coveredelements="12"/>
       </file>
     </package>
-    <package name="VasilDakov\GDS\GenericPortalAdapter">
-      <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/LoginRequest.php">
-        <class name="LoginRequest" namespace="VasilDakov\GDS\GenericPortalAdapter">
-          <metrics methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="1" elements="11" coveredelements="2"/>
+    <package name="VasilDakov\GDS\GenericPortalAdapter\Request">
+      <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Request/LoginRequest.php">
+        <class name="LoginRequest" namespace="VasilDakov\GDS\GenericPortalAdapter\Request">
+          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="9" coveredelements="0"/>
         </class>
-        <line num="12" type="method" name="__construct" crap="1" count="2"/>
-        <line num="14" type="stmt" count="2"/>
-        <line num="16" type="method" name="__get" crap="6" count="0"/>
-        <line num="18" type="stmt" count="0"/>
-        <line num="19" type="stmt" count="0"/>
-        <line num="21" type="stmt" count="0"/>
-        <line num="24" type="method" name="__set" crap="6" count="0"/>
-        <line num="26" type="stmt" count="0"/>
-        <line num="27" type="stmt" count="0"/>
-        <line num="28" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <metrics loc="31" ncloc="31" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="1" elements="11" coveredelements="2"/>
+        <line num="38" type="method" name="__get" crap="6" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="__set" crap="6" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <metrics loc="54" ncloc="39" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="9" coveredelements="0"/>
       </file>
-      <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/RegisterRequest.php">
-        <class name="RegisterRequest" namespace="VasilDakov\GDS\GenericPortalAdapter">
+      <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Request/LogoutRequest.php">
+        <class name="LogoutRequest" namespace="VasilDakov\GDS\GenericPortalAdapter\Request">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+        </class>
+        <line num="25" type="method" name="setSystemUid" crap="1" count="4"/>
+        <line num="27" type="stmt" count="4"/>
+        <line num="28" type="stmt" count="4"/>
+        <line num="32" type="method" name="setClientUid" crap="1" count="4"/>
+        <line num="34" type="stmt" count="4"/>
+        <line num="35" type="stmt" count="4"/>
+        <metrics loc="37" ncloc="27" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+      </file>
+      <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Request/RegisterRequest.php">
+        <class name="RegisterRequest" namespace="VasilDakov\GDS\GenericPortalAdapter\Request">
           <metrics methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="2" elements="12" coveredelements="3"/>
         </class>
         <line num="26" type="method" name="__construct" crap="1" count="3"/>
@@ -228,6 +242,6 @@
         <metrics loc="47" ncloc="47" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="2" elements="12" coveredelements="3"/>
       </file>
     </package>
-    <metrics files="7" loc="831" ncloc="615" classes="6" methods="43" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="138" coveredstatements="40" elements="181" coveredelements="48"/>
+    <metrics files="8" loc="901" ncloc="660" classes="7" methods="44" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="145" coveredstatements="42" elements="189" coveredelements="50"/>
   </project>
 </coverage>

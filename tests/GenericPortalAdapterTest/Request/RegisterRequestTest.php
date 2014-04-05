@@ -1,6 +1,6 @@
 <?php 
 
-use VasilDakov\GDS\GenericPortalAdapter\RegisterRequest;
+use VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest;
 use VasilDakov\GDS\GenericPortalAdapter\Collection\PlayerPropertyCollection;
 
 class RegisterRequestTest extends \PHPUnit_Framework_TestCase {
@@ -16,14 +16,14 @@ class RegisterRequestTest extends \PHPUnit_Framework_TestCase {
 	{
 		$request = new RegisterRequest;
 
-		$this->assertClassHasAttribute('systemUID', 'VasilDakov\GDS\GenericPortalAdapter\RegisterRequest');
-		$this->assertClassHasAttribute('clientUID', 'VasilDakov\GDS\GenericPortalAdapter\RegisterRequest');
-		$this->assertClassHasAttribute('partnerUID', 'VasilDakov\GDS\GenericPortalAdapter\RegisterRequest');
-		$this->assertClassHasAttribute('ipAddress', 'VasilDakov\GDS\GenericPortalAdapter\RegisterRequest');
-		$this->assertClassHasAttribute('promotionCode', 'VasilDakov\GDS\GenericPortalAdapter\RegisterRequest');
-		$this->assertClassHasAttribute('visitorID', 'VasilDakov\GDS\GenericPortalAdapter\RegisterRequest');
-		$this->assertClassHasAttribute('registrationLevel', 'VasilDakov\GDS\GenericPortalAdapter\RegisterRequest');
-		$this->assertClassHasAttribute('properties', 'VasilDakov\GDS\GenericPortalAdapter\RegisterRequest');
+		$this->assertClassHasAttribute('systemUID', 'VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest');
+		$this->assertClassHasAttribute('clientUID', 'VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest');
+		$this->assertClassHasAttribute('partnerUID', 'VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest');
+		$this->assertClassHasAttribute('ipAddress', 'VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest');
+		$this->assertClassHasAttribute('promotionCode', 'VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest');
+		$this->assertClassHasAttribute('visitorID', 'VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest');
+		$this->assertClassHasAttribute('registrationLevel', 'VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest');
+		$this->assertClassHasAttribute('properties', 'VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest');
 	}
 
 	public function testRegisterRequestPropertyProperties() 

@@ -1,8 +1,8 @@
 <?php 
 
 use VasilDakov\GDS\GenericPortalAdapter;
-use VasilDakov\GDS\GenericPortalAdapter\RegisterRequest;
-use VasilDakov\GDS\GenericPortalAdapter\LoginRequest;
+use VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest;
+use VasilDakov\GDS\GenericPortalAdapter\Request\LoginRequest;
 
 class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
 
@@ -40,10 +40,7 @@ class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
         $client = new GenericPortalAdapter('./data/GenericPortalAdapter.wsdl', $options = array());
 
         $request = new RegisterRequest;
-        $this->assertInstanceOf('\VasilDakov\GDS\GenericPortalAdapter\RegisterRequest', $request);
-
-        $response = $client->Register($request);
-        $this->assertTrue($response);
+        $this->assertInstanceOf('\VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest', $request);
     }
 
 

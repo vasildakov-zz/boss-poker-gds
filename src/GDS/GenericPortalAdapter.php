@@ -10,10 +10,14 @@
 
 namespace VasilDakov\GDS;
 
-use VasilDakov\GDS\GenericPortalAdapter\RegisterRequest;
-use VasilDakov\GDS\GenericPortalAdapter\LoginRequest;
+use VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest;
+use VasilDakov\GDS\GenericPortalAdapter\Request\LoginRequest;
+use VasilDakov\GDS\GenericPortalAdapter\Request\LogoutRequest;
 
 class GenericPortalAdapter extends \SoapClient { 
+
+
+    const GPA_API_VERSION = '1.3.3';
 
 	private static $classmap = array(
     		'Register' => 'Register',
@@ -37,13 +41,19 @@ class GenericPortalAdapter extends \SoapClient {
 
     public function Register(RegisterRequest $request) 
     {
-        return true;
+        return $this->__soapCall('Register', array($request), array(
+            'uri' => 'bosscasinos/GDS/GenericPortalAdapter/',
+            'soapaction' => ''
+        ));
     }
 
 
     public function Login(LoginRequest $request) 
     {
-        return true;
+        return $this->__soapCall('Login', array($request), array(
+            'uri' => 'bosscasinos/GDS/GenericPortalAdapter/',
+            'soapaction' => ''
+        ));
     }
 
     public function LoginWithToken($request) {}

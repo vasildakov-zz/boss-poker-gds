@@ -1,6 +1,6 @@
 <?php
 
-namespace VasilDakov\GDS\GenericPortalAdapter;
+namespace VasilDakov\GDS\GenericPortalAdapter\Request;
 
 use VasilDakov\GDS\GenericPortalAdapter\Collection\PlayerPropertyCollection;
 
