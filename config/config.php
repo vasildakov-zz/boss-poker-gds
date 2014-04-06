@@ -12,3 +12,6 @@ return array(
 	'date' => '2014-03-01',
 	'productGroupId' => 6670,
 );
+
+// phpunit --coverage-html coverage
+// php vendor/bin/coveralls -v

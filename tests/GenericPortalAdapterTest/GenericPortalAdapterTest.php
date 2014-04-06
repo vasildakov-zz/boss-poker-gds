@@ -176,7 +176,7 @@ class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
         $request->systemUID = 1;
         $request->clientUID = 2;
         $request->clientIpAddress = '10.1.1.1';
-        $request->authenticationToken = 'token';
+        $request->authenticationToken = 'authenticationtoken';
 
         $response = new LoginResponse;
         $response->Result = new \StdClass;
