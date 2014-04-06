@@ -2,7 +2,9 @@
 
 use VasilDakov\GDS\GenericPortalAdapter;
 use VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest;
+
 use VasilDakov\GDS\GenericPortalAdapter\Request\LoginRequest;
+use VasilDakov\GDS\GenericPortalAdapter\Response\LoginResponse;
 
 class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
 
@@ -40,6 +42,7 @@ class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
         $client = new GenericPortalAdapter('./data/GenericPortalAdapter.wsdl', $options = array());
 
         $request = new RegisterRequest;
+        
         $this->assertInstanceOf('\VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest', $request);
     }
 
@@ -51,35 +54,80 @@ class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
         $request->username = 'valid_username';
         $request->password = 'valid_password';
 
-        $response = TRUE; // use fixtures
+        $response = new LoginResponse;
+        $response->Result = new \StdClass;
+        $response->Result->sessionID = "sessionstring";
+        
+        $this->client->expects($this->any())->method('Login')->will($this->returnValue($response));
 
-        $this->client->expects($this->any())
-                     ->method('Login')
-                     ->will($this->returnValue($response));
+        $this->assertInstanceOf("\VasilDakov\GDS\GenericPortalAdapter\Response\LoginResponse", $response);
+        $this->assertEquals($response->Result->sessionID, "sessionstring");
 
-        $this->assertTrue($response);
-
+        $this->assertEquals($response, $this->client->Login($request) );
     }
 
+
+    /**
+     * Login with non existing user
+     */
     public function testLoginFailure() 
     {
         $request = new LoginRequest;
         $request->username = 'invalid_username';
         $request->password = 'invalid_password';
 
-        $response = FALSE; // use fixtures
+        $response = new LoginResponse;
+        $response->Result = new \StdClass;
+        $response->Result->sessionID = NULL;
         
-        $this->client->expects($this->any())
-                     ->method('Login')
-                     ->will($this->returnValue($response));
+        $this->client->expects($this->any())->method('Login')->will($this->returnValue($response));
 
-        $this->assertFalse($response);
+        $this->assertNull($response->Result->sessionID);
+        $this->assertEquals($response, $this->client->Login($request) );
+
+        $this->assertInstanceOf("\VasilDakov\GDS\GenericPortalAdapter\Response\LoginResponse", $response);
+        $this->setExpectedException('Exception', 'LoginForbiddenFault');
+
+        throw new Exception('LoginForbiddenFault');
     }
        
 
-    public function testLoginWithToken() {}
+    /**
+     * Login with token
+     */
+    public function testLoginWithTokenSuccess() 
+    {
+        $request = new VasilDakov\GDS\GenericPortalAdapter\Request\LoginWithTokenRequest;
+        $request->systemUID = 1;
+        $request->clientUID = 2;
+        $request->clientIpAddress = '10.1.1.1';
+        $request->authenticationToken = 'token';
 
-    public function testLogout() {}
+        $response = new LoginResponse;
+        $response->Result = new \StdClass;
+        $response->Result->sessionID = 'sessionstring';
+
+        $this->client->expects($this->any())->method('LoginWithToken')->will($this->returnValue($response));
+
+        $this->assertEquals($response, $this->client->LoginWithToken($request) );
+        $this->assertEquals($response->Result->sessionID, "sessionstring");
+
+    }
+
+    /**
+     * Logout
+     */
+    public function testLogout() 
+    {
+        $request = new VasilDakov\GDS\GenericPortalAdapter\Request\LogoutRequest; 
+        $request->systemUID = 1;
+        $request->sessionID = "sessionstring";
+
+        $response = NULL;
+
+        $this->client->expects($this->any())->method('Logout')->will($this->returnValue($response));
+
+    }
 
     public function testGetAccountBalance() {}
 

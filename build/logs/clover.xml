@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1396725407">
-  <project timestamp="1396725407">
+<coverage generated="1396803696">
+  <project timestamp="1396803696">
     <file name="/var/www/boss-poker-gds/config/config.php">
       <line num="3" type="stmt" count="1"/>
       <line num="5" type="stmt" count="1"/>
@@ -27,15 +27,15 @@
         <line num="37" type="stmt" count="3"/>
         <line num="38" type="stmt" count="3"/>
         <line num="39" type="stmt" count="3"/>
-        <line num="42" type="method" name="Register" crap="2" count="0"/>
-        <line num="44" type="stmt" count="0"/>
-        <line num="45" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <line num="51" type="method" name="Login" crap="2" count="0"/>
-        <line num="53" type="stmt" count="0"/>
-        <line num="54" type="stmt" count="0"/>
-        <line num="56" type="stmt" count="0"/>
-        <metrics loc="149" ncloc="141" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="7" elements="16" coveredelements="8"/>
+        <line num="46" type="method" name="Register" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="59" type="method" name="Login" crap="2" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="64" type="stmt" count="0"/>
+        <metrics loc="359" ncloc="187" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="7" elements="16" coveredelements="8"/>
       </file>
       <file name="/var/www/boss-poker-gds/src/GDS/UsercustService.php">
         <class name="UsercustService" namespace="VasilDakov\GDS">
@@ -213,15 +213,18 @@
       </file>
       <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Request/LogoutRequest.php">
         <class name="LogoutRequest" namespace="VasilDakov\GDS\GenericPortalAdapter\Request">
-          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+          <metrics methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="6" elements="9" coveredelements="7"/>
         </class>
-        <line num="25" type="method" name="setSystemUid" crap="1" count="4"/>
-        <line num="27" type="stmt" count="4"/>
-        <line num="28" type="stmt" count="4"/>
-        <line num="32" type="method" name="setClientUid" crap="1" count="4"/>
-        <line num="34" type="stmt" count="4"/>
-        <line num="35" type="stmt" count="4"/>
-        <metrics loc="37" ncloc="27" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+        <line num="26" type="method" name="get" crap="2.15" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="34" type="method" name="set" crap="2" count="4"/>
+        <line num="36" type="stmt" count="4"/>
+        <line num="37" type="stmt" count="4"/>
+        <line num="38" type="stmt" count="4"/>
+        <line num="40" type="stmt" count="4"/>
+        <metrics loc="42" ncloc="32" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="6" elements="9" coveredelements="7"/>
       </file>
       <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Request/RegisterRequest.php">
         <class name="RegisterRequest" namespace="VasilDakov\GDS\GenericPortalAdapter\Request">
@@ -242,6 +245,6 @@
         <metrics loc="47" ncloc="47" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="2" elements="12" coveredelements="3"/>
       </file>
     </package>
-    <metrics files="8" loc="901" ncloc="660" classes="7" methods="44" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="145" coveredstatements="42" elements="189" coveredelements="50"/>
+    <metrics files="8" loc="1116" ncloc="711" classes="7" methods="44" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="148" coveredstatements="44" elements="192" coveredelements="51"/>
   </project>
 </coverage>

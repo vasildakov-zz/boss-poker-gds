@@ -19,19 +19,24 @@ class LogoutRequest {
 	/**
 	 * @var string The ID that identifies the client that the player tries to login from.
 	*/
-	public $clientUID;
+	public $sessionID;
 
 
-	public function setSystemUid($systemUID) 
+
+	public function get($key) 
 	{
-		$this->systemUID = $systemUID;
-		return $this;
+		if (property_exists($this, $key)) {
+			return $this->$key;
+		}
 	}
 
 
-	public function setClientUid($clientUID) 
+	public function set($key, $value) 
 	{
-		$this->clientUID = $clientUID;
+		if (property_exists($this, $key)) {
+			$this->$key = $value;
+		}
+
 		return $this;
 	}
 
