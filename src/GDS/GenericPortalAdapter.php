@@ -59,7 +59,7 @@ class GenericPortalAdapter extends \SoapClient {
      */
     public function Login(LoginRequest $request) 
     {
-        return $this->__soapCall('Login', array($request), array(
+        return $this->__soapCall('Login', array(array("request" => $request)), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
             ));
     }
@@ -85,7 +85,7 @@ class GenericPortalAdapter extends \SoapClient {
      */
     public function Logout(LogoutRequest $request) 
     {
-        return $this->__soapCall('Logout', array($request), array(
+        return $this->__soapCall('Logout', array(array("request" => $request)), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
             ));
     }

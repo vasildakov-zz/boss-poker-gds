@@ -2,8 +2,10 @@
 
 use VasilDakov\GDS\GenericPortalAdapter;
 use VasilDakov\GDS\GenericPortalAdapter\Request\RegisterRequest;
-
 use VasilDakov\GDS\GenericPortalAdapter\Request\LoginRequest;
+use VasilDakov\GDS\GenericPortalAdapter\Request\LogoutRequest;
+use VasilDakov\GDS\GenericPortalAdapter\Request\LoginWithTokenRequest;
+
 use VasilDakov\GDS\GenericPortalAdapter\Response\LoginResponse;
 
 class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
@@ -102,6 +104,25 @@ class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
 
 
 
+    public function testLoginConnectionFailure() 
+    {
+        $client = new GenericPortalAdapter('./data/GenericPortalAdapter.wsdl', $options = array());
+        
+        $request = new LoginRequest;
+        $request->systemUID = 123999;
+        $request->clientUID = 7788;
+        $request->clientIpAddress = '10.1.1.1';
+        $request->username = 'username';
+        $request->password = 'password';
+
+        $this->setExpectedException('SoapFault', 'Could not connect to host');
+
+        $response = new LoginResponse;
+        $response = $client->Login( $request );
+        
+    }
+
+
     public function testLoginSuccess() 
     {
         $request = new LoginRequest;
@@ -151,7 +172,7 @@ class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
      */
     public function testLoginWithTokenSuccess() 
     {
-        $request = new VasilDakov\GDS\GenericPortalAdapter\Request\LoginWithTokenRequest;
+        $request = new LoginWithTokenRequest;
         $request->systemUID = 1;
         $request->clientUID = 2;
         $request->clientIpAddress = '10.1.1.1';
@@ -168,20 +189,33 @@ class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
 
     }
 
-    /**
-     * Logout
-     */
+
+
+    public function testLogoutConnectionFailure() 
+    {
+        $client = new GenericPortalAdapter('./data/GenericPortalAdapter.wsdl', $options = array());
+        $request = new LogoutRequest; 
+        $request->systemUID = 1;
+        $request->sessionID = "sessionstring";
+
+        $this->setExpectedException('SoapFault', 'Could not connect to host');
+        $client->Logout($request);
+    }
+
+
+
     public function testLogout() 
     {
-        $request = new VasilDakov\GDS\GenericPortalAdapter\Request\LogoutRequest; 
+        $request = new LogoutRequest; 
         $request->systemUID = 1;
         $request->sessionID = "sessionstring";
 
         $response = NULL;
 
         $this->client->expects($this->any())->method('Logout')->will($this->returnValue($response));
-
     }
+
+
 
     public function testGetAccountBalance() {}
 

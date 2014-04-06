@@ -9,6 +9,8 @@ $coverage->setData(array (
       1 => 'GenericPortalAdapterTest::testInheritance',
       2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
       3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      4 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
+      5 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
     ),
     33 => 
     array (
@@ -16,13 +18,8 @@ $coverage->setData(array (
       1 => 'GenericPortalAdapterTest::testInheritance',
       2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
       3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
-    ),
-    34 => 
-    array (
-      0 => 'GenericPortalAdapterTest::testConstruct',
-      1 => 'GenericPortalAdapterTest::testInheritance',
-      2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
-      3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      4 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
+      5 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
     ),
     35 => 
     array (
@@ -30,6 +27,8 @@ $coverage->setData(array (
       1 => 'GenericPortalAdapterTest::testInheritance',
       2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
       3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      4 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
+      5 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
     ),
     36 => 
     array (
@@ -37,6 +36,17 @@ $coverage->setData(array (
       1 => 'GenericPortalAdapterTest::testInheritance',
       2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
       3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      4 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
+      5 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
+    ),
+    37 => 
+    array (
+      0 => 'GenericPortalAdapterTest::testConstruct',
+      1 => 'GenericPortalAdapterTest::testInheritance',
+      2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
+      3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      4 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
+      5 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
     ),
     38 => 
     array (
@@ -44,6 +54,8 @@ $coverage->setData(array (
       1 => 'GenericPortalAdapterTest::testInheritance',
       2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
       3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      4 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
+      5 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
     ),
     39 => 
     array (
@@ -51,6 +63,8 @@ $coverage->setData(array (
       1 => 'GenericPortalAdapterTest::testInheritance',
       2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
       3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      4 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
+      5 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
     ),
     49 => 
     array (
@@ -64,12 +78,15 @@ $coverage->setData(array (
     52 => NULL,
     62 => 
     array (
+      0 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
     ),
     63 => 
     array (
+      0 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
     ),
     64 => 
     array (
+      0 => 'GenericPortalAdapterTest::testLoginConnectionFailure',
     ),
     65 => NULL,
     75 => 
@@ -84,12 +101,15 @@ $coverage->setData(array (
     78 => NULL,
     88 => 
     array (
+      0 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
     ),
     89 => 
     array (
+      0 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
     ),
     90 => 
     array (
+      0 => 'GenericPortalAdapterTest::testLogoutConnectionFailure',
     ),
     91 => NULL,
     101 => 
@@ -621,6 +641,8 @@ $coverage->setTests(array (
   'GenericPortalAdapterTest::testInheritance' => 0,
   'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods' => 0,
   'GenericPortalAdapterTest::testRegisterRequestInstance' => 0,
+  'GenericPortalAdapterTest::testLoginConnectionFailure' => 0,
+  'GenericPortalAdapterTest::testLogoutConnectionFailure' => 0,
   'RegisterRequestTest::testRegisterRequestHasProperties' => 0,
   'RegisterRequestTest::testRegisterRequestPropertyProperties' => 0,
   'UsercustServiceTest::testUsercustServiceHasMethods' => 0,
