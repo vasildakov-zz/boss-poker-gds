@@ -36,6 +36,60 @@ class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
     }
 
 
+    public function testGenericPortalAdapterHasAllMethods() 
+    {
+        $client = new GenericPortalAdapter('./data/GenericPortalAdapter.wsdl');
+
+        $this->assertTrue(method_exists($client, 'Register'));
+        $this->assertTrue(method_exists($client, 'Login'));
+        $this->assertTrue(method_exists($client, 'LoginWithToken'));
+        $this->assertTrue(method_exists($client, 'GetAccountBalance'));
+        $this->assertTrue(method_exists($client, 'GetNickName'));
+        $this->assertTrue(method_exists($client, 'GetAllNickNames'));
+        $this->assertTrue(method_exists($client, 'SetNickName'));
+        $this->assertTrue(method_exists($client, 'IsUsernameAvailable'));
+        $this->assertTrue(method_exists($client, 'RedeemLoyaltyPoints'));
+        $this->assertTrue(method_exists($client, 'DeductLoyaltyPoints'));
+        $this->assertTrue(method_exists($client, 'UpdatePassword'));
+        $this->assertTrue(method_exists($client, 'RenewPassword'));
+        $this->assertTrue(method_exists($client, 'ReferAFriend'));
+        $this->assertTrue(method_exists($client, 'ActivateAccount'));
+        $this->assertTrue(method_exists($client, 'VerifyEmail'));
+        $this->assertTrue(method_exists($client, 'VerifySMS'));
+        $this->assertTrue(method_exists($client, 'UpdatePlayerDetails'));
+        $this->assertTrue(method_exists($client, 'GetPlayerDetails'));
+        $this->assertTrue(method_exists($client, 'VerifyAuthenticationToken'));
+        $this->assertTrue(method_exists($client, 'GetGameAccountBalance'));
+        $this->assertTrue(method_exists($client, 'GetAuthenticationToken'));
+        $this->assertTrue(method_exists($client, 'GetBonusRewardDetails'));
+        $this->assertTrue(method_exists($client, 'GetPendingPayoutDetails'));
+        $this->assertTrue(method_exists($client, 'GetReferAFriendStatus'));
+        $this->assertTrue(method_exists($client, 'GetRewardTransactions'));
+        $this->assertTrue(method_exists($client, 'GetGamingTransactions'));
+        $this->assertTrue(method_exists($client, 'GetPaymentTransactions'));
+        $this->assertTrue(method_exists($client, 'GetBonusBalance'));
+        $this->assertTrue(method_exists($client, 'GetAvailableCountries'));
+        $this->assertTrue(method_exists($client, 'GetPayoutStatistics'));
+        $this->assertTrue(method_exists($client, 'GetBiggestWinners'));
+        $this->assertTrue(method_exists($client, 'GetRecentWinners'));
+        $this->assertTrue(method_exists($client, 'GetJackpotWinners'));
+        $this->assertTrue(method_exists($client, 'VerifyAdminUserAuthToken'));
+        $this->assertTrue(method_exists($client, 'GetCurrentPlayers'));
+        $this->assertTrue(method_exists($client, 'ValidatePlayerSession'));
+        $this->assertTrue(method_exists($client, 'RegisterPromotionCode'));
+        $this->assertTrue(method_exists($client, 'SetSessionLimit'));
+        $this->assertTrue(method_exists($client, 'SetWagerLimits'));
+        $this->assertTrue(method_exists($client, 'SetLossLimits'));
+        $this->assertTrue(method_exists($client, 'SetRealityCheckEnabled'));
+        $this->assertTrue(method_exists($client, 'WillBecomePermanent'));
+        $this->assertTrue(method_exists($client, 'SelfExclude'));
+        $this->assertTrue(method_exists($client, 'GetResponsibleGamingSettings'));
+        $this->assertTrue(method_exists($client, 'GetRewardDetails'));
+        $this->assertTrue(method_exists($client, 'GetSelfExclusions'));
+        $this->assertTrue(method_exists($client, 'GetPlayerRegistrationLevels'));
+    }
+
+
 
     public function testRegisterRequestInstance() 
     {
@@ -216,5 +270,8 @@ class GenericPortalAdapterTest extends \PHPUnit_Framework_TestCase {
     public function testGetSelfExclusions() {}
 
     public function testGetPlayerRegistrationLevels() {}
+
+
+
 
 }

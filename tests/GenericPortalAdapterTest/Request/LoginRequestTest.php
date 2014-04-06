@@ -17,8 +17,8 @@ class LoginRequestTest extends \PHPUnit_Framework_TestCase {
 		$this->request->clientIpAddress = '10.1.1.1';
 		$this->request->username = 'username';
 		$this->request->password = 'password';
-
 	}
+
 
 	/**
 	 * Ensure that LoginRequest has all mandatory attributes
@@ -32,7 +32,10 @@ class LoginRequestTest extends \PHPUnit_Framework_TestCase {
 		$this->assertClassHasAttribute('password', 'VasilDakov\GDS\GenericPortalAdapter\Request\LoginRequest');
 	}
 
-
+	public function test1() 
+	{
+		$this->assertInstanceOf('VasilDakov\GDS\GenericPortalAdapter\Request\LoginRequest', $this->request);
+	}
 
 	protected function tearDown() 
 	{

@@ -3,68 +3,145 @@ $coverage = new PHP_CodeCoverage;
 $coverage->setData(array (
   '/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter.php' => 
   array (
-    32 => 
+    31 => 
     array (
       0 => 'GenericPortalAdapterTest::testConstruct',
       1 => 'GenericPortalAdapterTest::testInheritance',
-      2 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
+      3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+    ),
+    33 => 
+    array (
+      0 => 'GenericPortalAdapterTest::testConstruct',
+      1 => 'GenericPortalAdapterTest::testInheritance',
+      2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
+      3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
     ),
     34 => 
     array (
       0 => 'GenericPortalAdapterTest::testConstruct',
       1 => 'GenericPortalAdapterTest::testInheritance',
-      2 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
+      3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
     ),
     35 => 
     array (
       0 => 'GenericPortalAdapterTest::testConstruct',
       1 => 'GenericPortalAdapterTest::testInheritance',
-      2 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
+      3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
     ),
     36 => 
     array (
       0 => 'GenericPortalAdapterTest::testConstruct',
       1 => 'GenericPortalAdapterTest::testInheritance',
-      2 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
-    ),
-    37 => 
-    array (
-      0 => 'GenericPortalAdapterTest::testConstruct',
-      1 => 'GenericPortalAdapterTest::testInheritance',
-      2 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
+      3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
     ),
     38 => 
     array (
       0 => 'GenericPortalAdapterTest::testConstruct',
       1 => 'GenericPortalAdapterTest::testInheritance',
-      2 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
+      2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
+      3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
     ),
     39 => 
     array (
       0 => 'GenericPortalAdapterTest::testConstruct',
       1 => 'GenericPortalAdapterTest::testInheritance',
-      2 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
-    ),
-    48 => 
-    array (
+      2 => 'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods',
+      3 => 'GenericPortalAdapterTest::testRegisterRequestInstance',
     ),
     49 => 
+    array (
+    ),
+    50 => 
     array (
     ),
     51 => 
     array (
     ),
     52 => NULL,
-    61 => 
+    62 => 
     array (
     ),
-    62 => 
+    63 => 
     array (
     ),
     64 => 
     array (
     ),
     65 => NULL,
+    75 => 
+    array (
+    ),
+    76 => 
+    array (
+    ),
+    77 => 
+    array (
+    ),
+    78 => NULL,
+    88 => 
+    array (
+    ),
+    89 => 
+    array (
+    ),
+    90 => 
+    array (
+    ),
+    91 => NULL,
+    101 => 
+    array (
+    ),
+    102 => 
+    array (
+    ),
+    103 => 
+    array (
+    ),
+    104 => NULL,
+    116 => 
+    array (
+    ),
+    117 => 
+    array (
+    ),
+    118 => 
+    array (
+    ),
+    119 => NULL,
+    131 => 
+    array (
+    ),
+    132 => 
+    array (
+    ),
+    133 => 
+    array (
+    ),
+    134 => NULL,
+    148 => 
+    array (
+    ),
+    149 => 
+    array (
+    ),
+    150 => 
+    array (
+    ),
+    151 => NULL,
+    161 => 
+    array (
+    ),
+    162 => 
+    array (
+    ),
+    163 => 
+    array (
+    ),
+    164 => NULL,
   ),
   '/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Request/RegisterRequest.php' => 
   array (
@@ -80,29 +157,6 @@ $coverage->setData(array (
       1 => 'RegisterRequestTest::testRegisterRequestHasProperties',
       2 => 'RegisterRequestTest::testRegisterRequestPropertyProperties',
     ),
-    33 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
-    35 => NULL,
-    36 => 
-    array (
-    ),
-    41 => 
-    array (
-    ),
-    42 => 
-    array (
-    ),
-    43 => 
-    array (
-    ),
-    45 => 
-    array (
-    ),
-    46 => NULL,
   ),
   '/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Collection/PlayerPropertyCollection.php' => 
   array (
@@ -218,78 +272,6 @@ $coverage->setData(array (
     array (
     ),
     102 => NULL,
-  ),
-  '/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Request/LoginRequest.php' => 
-  array (
-    40 => 
-    array (
-    ),
-    41 => 
-    array (
-    ),
-    42 => NULL,
-    43 => 
-    array (
-    ),
-    48 => 
-    array (
-    ),
-    49 => 
-    array (
-    ),
-    50 => 
-    array (
-    ),
-    52 => 
-    array (
-    ),
-    53 => NULL,
-  ),
-  '/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter/Request/LogoutRequest.php' => 
-  array (
-    28 => 
-    array (
-      0 => 'LogoutRequestTest::testLogoutRequestGetters',
-      1 => 'LogoutRequestTest::testLogoutRequestAttributeTypes',
-    ),
-    29 => 
-    array (
-      0 => 'LogoutRequestTest::testLogoutRequestGetters',
-      1 => 'LogoutRequestTest::testLogoutRequestAttributeTypes',
-    ),
-    30 => NULL,
-    31 => 
-    array (
-    ),
-    36 => 
-    array (
-      0 => 'LogoutRequestTest::testLogoutRequestHasAttributes',
-      1 => 'LogoutRequestTest::testLogoutRequestSetters',
-      2 => 'LogoutRequestTest::testLogoutRequestGetters',
-      3 => 'LogoutRequestTest::testLogoutRequestAttributeTypes',
-    ),
-    37 => 
-    array (
-      0 => 'LogoutRequestTest::testLogoutRequestHasAttributes',
-      1 => 'LogoutRequestTest::testLogoutRequestSetters',
-      2 => 'LogoutRequestTest::testLogoutRequestGetters',
-      3 => 'LogoutRequestTest::testLogoutRequestAttributeTypes',
-    ),
-    38 => 
-    array (
-      0 => 'LogoutRequestTest::testLogoutRequestHasAttributes',
-      1 => 'LogoutRequestTest::testLogoutRequestSetters',
-      2 => 'LogoutRequestTest::testLogoutRequestGetters',
-      3 => 'LogoutRequestTest::testLogoutRequestAttributeTypes',
-    ),
-    40 => 
-    array (
-      0 => 'LogoutRequestTest::testLogoutRequestHasAttributes',
-      1 => 'LogoutRequestTest::testLogoutRequestSetters',
-      2 => 'LogoutRequestTest::testLogoutRequestGetters',
-      3 => 'LogoutRequestTest::testLogoutRequestAttributeTypes',
-    ),
-    41 => NULL,
   ),
   '/var/www/boss-poker-gds/src/GDS/UsercustService.php' => 
   array (
@@ -637,13 +619,8 @@ $coverage->setData(array (
 $coverage->setTests(array (
   'GenericPortalAdapterTest::testConstruct' => 0,
   'GenericPortalAdapterTest::testInheritance' => 0,
+  'GenericPortalAdapterTest::testGenericPortalAdapterHasAllMethods' => 0,
   'GenericPortalAdapterTest::testRegisterRequestInstance' => 0,
-  'GenericPortalAdapterTest::testLoginSuccess' => 0,
-  'GenericPortalAdapterTest::testLogout' => 0,
-  'LogoutRequestTest::testLogoutRequestHasAttributes' => 0,
-  'LogoutRequestTest::testLogoutRequestSetters' => 0,
-  'LogoutRequestTest::testLogoutRequestGetters' => 0,
-  'LogoutRequestTest::testLogoutRequestAttributeTypes' => 0,
   'RegisterRequestTest::testRegisterRequestHasProperties' => 0,
   'RegisterRequestTest::testRegisterRequestPropertyProperties' => 0,
   'UsercustServiceTest::testUsercustServiceHasMethods' => 0,

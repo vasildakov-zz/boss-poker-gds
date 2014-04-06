@@ -2,12 +2,7 @@
 
 namespace VasilDakov\GDS\GenericPortalAdapter\Request;
 
-/**
- * LogoutRequest
- * Terminates a player session.
- */
-
-class LogoutRequest {
+class AccountBalanceRequest {
 
 
 	/**
@@ -17,8 +12,8 @@ class LogoutRequest {
 	
 
 	/**
-	 * @var string The ID that identifies the client that the player tries to login from.
+	 * @var string  The ID that identifies a player’s ongoing session.
 	*/
 	public $sessionID;
-
+	
 }

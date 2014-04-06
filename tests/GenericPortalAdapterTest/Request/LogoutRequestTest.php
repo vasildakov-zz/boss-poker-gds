@@ -12,8 +12,8 @@ class LogoutRequestTest extends \PHPUnit_Framework_TestCase {
 
 		$this->request = new LogoutRequest;
 
-		$this->request->set('systemUID', 1);
-		$this->request->set('sessionID', "sessionstring");
+		$this->request->systemUID = 1;
+		$this->request->sessionID = "sessionstring";
 
 	}
 
@@ -29,28 +29,10 @@ class LogoutRequestTest extends \PHPUnit_Framework_TestCase {
 	}
 
 
-	public function testLogoutRequestSetters() 
-	{
-		$this->assertInstanceOf('VasilDakov\GDS\GenericPortalAdapter\Request\LogoutRequest', 
-			$this->request->set('systemUID', 1)
-		);
-
-		$this->assertInstanceOf('VasilDakov\GDS\GenericPortalAdapter\Request\LogoutRequest', 
-			$this->request->set('sessionID', "sessionstring") 
-		);
-	}
-
-	public function testLogoutRequestGetters() 
-	{
-		$this->assertEquals($this->request->get('systemUID'), 1);
-		$this->assertEquals($this->request->get('sessionID'), "sessionstring");
-	}
-
-
 	public function testLogoutRequestAttributeTypes() 
 	{	
-		$this->assertTrue( is_numeric($this->request->get('systemUID')));
-		$this->assertTrue( is_string($this->request->get('sessionID')));
+		$this->assertTrue( is_numeric($this->request->systemUID));
+		$this->assertTrue( is_string($this->request->sessionID));
 	} 
 
 
