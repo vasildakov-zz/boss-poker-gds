@@ -18,25 +18,25 @@ class GenericPortalAdapter extends \SoapClient {
 
     const API_VERSION = '1.3.3';
 
-	private static $classmap = array(
-    		'Register' => 'Register',
-            'Login'    => 'Login',
-            'Logout'   => 'Logout'
-	);
+    private static $classmap = array(
+      'Register' => 'Register',
+      'Login'    => 'Login',
+      'Logout'   => 'Logout'
+      );
 
 
 
-	public function __construct($wsdl, $options = array()) 
-	{
-		foreach(self::$classmap as $key => $value) 
+    public function __construct($wsdl, $options = array()) 
+    {
+        parent::__construct($wsdl, $options);
+
+        foreach(self::$classmap as $key => $value) 
         {
-			if(!isset($options['classmap'][$key])) {
-				$options['classmap'][$key] = $value;
-			}
-		}
-
-		parent::__construct($wsdl, $options);
-	}	
+            if(!isset($options['classmap'][$key])) {
+                $options['classmap'][$key] = $value;
+            }
+        }
+    }	
 
 
     /**
@@ -48,7 +48,7 @@ class GenericPortalAdapter extends \SoapClient {
     {
         return $this->__soapCall('Register', array($request), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
-        ));
+            ));
     }
 
 
@@ -61,7 +61,7 @@ class GenericPortalAdapter extends \SoapClient {
     {
         return $this->__soapCall('Login', array($request), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
-        ));
+            ));
     }
 
 
@@ -74,7 +74,7 @@ class GenericPortalAdapter extends \SoapClient {
     {
         return $this->__soapCall('LoginWithToken', array($request), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
-        ));
+            ));
     }
 
 
@@ -87,7 +87,7 @@ class GenericPortalAdapter extends \SoapClient {
     {
         return $this->__soapCall('Logout', array($request), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
-        ));
+            ));
     }
 
 
@@ -100,7 +100,7 @@ class GenericPortalAdapter extends \SoapClient {
     {
         return $this->__soapCall('GetAccountBalance', array($request), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
-        ));
+            ));
     }
 
 
@@ -115,7 +115,7 @@ class GenericPortalAdapter extends \SoapClient {
     {
         return $this->__soapCall('GetNickName', array($request), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
-        ));
+            ));
     }
 
 
@@ -130,7 +130,7 @@ class GenericPortalAdapter extends \SoapClient {
     {
         return $this->__soapCall('GetAllNickNames', array($request), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
-        ));
+            ));
     }
 
 
@@ -147,7 +147,7 @@ class GenericPortalAdapter extends \SoapClient {
     {
         return $this->__soapCall('SetNickName', array($request), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
-        ));
+            ));
     }
 
 
@@ -160,7 +160,7 @@ class GenericPortalAdapter extends \SoapClient {
     {
         return $this->__soapCall('IsUsernameAvailable', array($request), array(
             'uri' => 'bosscasinos/GDS/GenericPortalAdapter/', 'soapaction' => ''
-        ));
+            ));
     }
 
 
