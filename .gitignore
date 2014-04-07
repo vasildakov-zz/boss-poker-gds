@@ -10,3 +10,5 @@ nbproject
 composer.lock
 vendor/*
 coverage/*
+build/cov/*
+build/logs/*

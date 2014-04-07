@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1396813181">
-  <project timestamp="1396813181">
+<coverage generated="1396885365">
+  <project timestamp="1396885365">
     <file name="/var/www/boss-poker-gds/config/config.php">
       <line num="3" type="stmt" count="1"/>
       <line num="5" type="stmt" count="1"/>
@@ -12,7 +12,7 @@
       <line num="12" type="stmt" count="1"/>
       <line num="13" type="stmt" count="1"/>
       <line num="14" type="stmt" count="1"/>
-      <metrics loc="13" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="9" coveredelements="9"/>
+      <metrics loc="16" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="10" coveredelements="10"/>
     </file>
     <package name="VasilDakov\GDS">
       <file name="/var/www/boss-poker-gds/src/GDS/GenericPortalAdapter.php">
@@ -234,6 +234,6 @@
         <metrics loc="29" ncloc="29" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </file>
     </package>
-    <metrics files="6" loc="1090" ncloc="656" classes="5" methods="45" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="148" coveredstatements="44" elements="193" coveredelements="52"/>
+    <metrics files="6" loc="1093" ncloc="656" classes="5" methods="45" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="149" coveredstatements="45" elements="194" coveredelements="53"/>
   </project>
 </coverage>

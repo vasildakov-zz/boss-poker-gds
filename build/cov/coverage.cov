@@ -342,6 +342,7 @@ $coverage->setData(array (
     array (
       0 => 'WarehouseServiceTest::testWarehouse_PlayerPokerGamingActivity1',
     ),
+    17 => NULL,
   ),
   '/var/www/boss-poker-gds/src/GDS/WarehouseService.php' => 
   array (
