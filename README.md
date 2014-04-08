@@ -1,4 +1,4 @@
-PHP client library for BossMedia Poker GDS 7.3.1 API
+PHP client library for BossMedia GDS
 =======================
 
 [![Build Status](https://travis-ci.org/vasildakov/boss-poker-gds.svg?branch=master)](https://travis-ci.org/vasildakov/boss-poker-gds)
